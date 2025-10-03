@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0 20px;
-  background: #f9f9f9;
+  background: #e6f0fa; /* Light gray-blue background */
   color: #333;
 }
 
@@ -23,6 +23,7 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 nav a:hover {
@@ -32,11 +33,40 @@ nav a:hover {
 section {
   max-width: 700px;
   margin: 40px auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+  border: 1px solid #dce6f1;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
 }
 
-h2 {
-  border-bottom: 2px solid #222;
-  padding-bottom: 8px;
+section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+section > h2 {
+  margin: 0;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ccc;
+  background: #f4f4f4;
+  cursor: pointer;
+  user-select: none;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 20px;
+}
+
+.content.active {
+  max-height: 1500px;
+  padding: 20px;
 }
 
 ul {
@@ -45,7 +75,7 @@ ul {
 }
 
 li {
-  background: white;
+  background: #fafafa;
   margin: 10px 0;
   padding: 15px;
   border-radius: 6px;
@@ -57,4 +87,8 @@ footer {
   margin: 40px 0;
   color: #888;
   font-size: 0.9rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
