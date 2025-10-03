@@ -30,6 +30,7 @@
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
     }
 
     nav a:hover {
@@ -43,6 +44,10 @@
       transform: translateY(20px);
       transition: opacity 0.6s ease-out, transform 0.6s ease-out;
       will-change: opacity, transform;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: white;
+      overflow: hidden;
     }
 
     section.is-visible {
@@ -50,9 +55,25 @@
       transform: none;
     }
 
-    h2 {
-      border-bottom: 2px solid #222;
-      padding-bottom: 8px;
+    section > h2 {
+      margin: 0;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ccc;
+      background: #f4f4f4;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, padding 0.5s ease;
+      padding: 0 20px;
+    }
+
+    .content.active {
+      max-height: 1500px;
+      padding: 20px;
     }
 
     ul {
@@ -61,7 +82,7 @@
     }
 
     li {
-      background: white;
+      background: #fafafa;
       margin: 10px 0;
       padding: 15px;
       border-radius: 6px;
@@ -74,46 +95,88 @@
       color: #888;
       font-size: 0.9rem;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Saidhu Hussen Basha Shaik</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" data-target="about">About</a>
+      <a href="#experience" data-target="experience">Professional Experience</a>
+      <a href="#projects" data-target="projects">Academic Projects</a>
+      <a href="#education" data-target="education">Education</a>
+      <a href="#contact" data-target="contact">Contact</a>
     </nav>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm Saidhu Hussen Basha Shaik, a software developer with 3+ years of experience building scalable full-stack applications and backend systems. I enjoy writing clean, testable code and creating efficient solutions.</p>
+    <div class="content">
+      <p>
+        Software Developer with 3+ years of experience building and maintaining scalable full-stack applications and backend systems.
+        Proficient in Python, C#, TypeScript, and JavaScript with hands-on experience in RESTful APIs, cloud infrastructure (Azure, AWS), and Agile delivery.
+        Recognized for writing clean, testable code, improving system performance, and driving automation.
+      </p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="content">
+      <h3>Erie Insurance, PA — Software Developer (09/2023 – 02/2025)</h3>
+      <ul>
+        <li>Designed and implemented 15+ responsive frontend components using React, TypeScript, and CSS, enhancing UI consistency across 3 internal platforms.</li>
+        <li>Engineered backend API endpoints with NestJS and PostgreSQL, reducing form submission errors by 25%.</li>
+        <li>Streamlined asynchronous workflows by optimizing Azure Storage Queues, cutting processing time by 45%.</li>
+        <li>Diagnosed and resolved CI/CD issues in Azure DevOps, reducing failed deployments by 30%.</li>
+        <li>Conducted 40+ code reviews and implemented peer feedback, resulting in a 15% drop in QA-reported defects.</li>
+        <li>Authored over 10 pages of internal documentation to support onboarding, deployment, and system configurations.</li>
+        <li>Built unit tests for critical modules, increasing test coverage from 60% to 85%.</li>
+        <li>Participated in Agile ceremonies (standups, sprint planning, retrospectives).</li>
+      </ul>
+
+      <h3>HashTek Solutions, India — Software Engineer</h3>
+      <ul>
+        <li>Developed 10+ web forms and UI modules using ASP.NET MVC and AngularJS for a national healthcare provider.</li>
+        <li>Integrated APIs and validated health data, reducing input discrepancies by 35%.</li>
+        <li>Automated recurring data loads with SSIS, reducing manual workload by 40+ hours per month.</li>
+        <li>Wrote 30+ stored procedures and SQL scripts supporting custom reports and regulatory audits.</li>
+        <li>Reported and resolved ~25 bugs during QA cycles, accelerating delivery by 2 weeks.</li>
+        <li>Participated in requirement gathering sessions and cross-functional discussions to ensure feature alignment.</li>
+        <li>Shadowed senior developers on production releases, gaining exposure to CI/CD workflows and root cause analysis.</li>
+      </ul>
+    </div>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Project One — A cool website built with HTML & CSS.</li>
-      <li>Project Two — A JavaScript game.</li>
-      <li>Project Three — A React portfolio.</li>
-      <li>Credit Risk Analysis using Machine Learning — Built a supervised learning pipeline with Python achieving 85% accuracy.</li>
-      <li>Privacy-Preserving Electronic Health Record (EHR) Database — Designed a secure cloud-based system ensuring HIPAA compliance.</li>
-    </ul>
+    <h2>Academic Projects</h2>
+    <div class="content">
+      <ul>
+        <li><strong>Credit Risk Analysis using Machine Learning</strong> — Built a supervised learning pipeline in Python leveraging pandas, scikit-learn, and Matplotlib to predict credit default risk with 85% accuracy. Trained and evaluated models achieving ROC-AUC 0.91 and precision-recall 0.87. Conducted feature selection and handled class imbalance, improving model generalization by 12%. Delivered an end-to-end ML pipeline that processed 100k+ loan records, generating insights that improved risk prediction accuracy by 15%.</li>
+        <li><strong>Privacy-Preserving Electronic Health Record (EHR) Database</strong> — Designed a secure cloud-based EHR system capable of handling 10k+ patient records, ensuring integrity and HIPAA compliance. Integrated functional commitments to guarantee verifiable record accuracy and regulatory adherence. Optimized UI design, improving user satisfaction scores by 25% during testing through enhanced usability-security balance.</li>
+      </ul>
+    </div>
   </section>
 
   <section id="education">
     <h2>Education</h2>
-    <p>Master’s in Computer Science from Bay Atlantic University, Jan 2022 to May 2023, GPA 3.82</p>
+    <div class="content">
+      <p>Master’s in Computer Science from Bay Atlantic University, 2022-2023. GPA 3.82</p>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
-    <p>Phone: +1 (240) 234-2963</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank" rel="noopener">linkedin.com/in/saidhu-shaik</a></p>
-    <p>Location: Washington DC</p>
+    <div class="content">
+      <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
+      <p>Phone: +1 (240) 234-2963</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank" rel="noopener">linkedin.com/in/saidhu-shaik</a></p>
+      <p>Location: Washington DC</p>
+    </div>
   </section>
 
   <footer>
@@ -124,6 +187,7 @@
     document.addEventListener('DOMContentLoaded', () => {
       const sections = document.querySelectorAll('section');
 
+      // Intersection Observer to fade in sections on scroll
       const observer = new IntersectionObserver(
         (entries, observer) => {
           entries.forEach(entry => {
@@ -132,12 +196,41 @@
               observer.unobserve(entry.target);
             }
           });
-        }, 
+        },
         { threshold: 0.1 }
       );
+      sections.forEach(section => observer.observe(section));
 
+      // Toggle content visibility on section header click
       sections.forEach(section => {
-        observer.observe(section);
+        const header = section.querySelector('h2');
+        const content = section.querySelector('.content');
+
+        header.addEventListener('click', () => {
+          content.classList.toggle('active');
+        });
+      });
+
+      // Nav link click: scroll & open section content
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+
+          const targetId = link.getAttribute('data-target');
+          const targetSection = document.getElementById(targetId);
+
+          if (targetSection) {
+            // Scroll to section
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+
+            // Open content if not already open
+            const content = targetSection.querySelector('.content');
+            if (content && !content.classList.contains('active')) {
+              content.classList.add('active');
+            }
+          }
+        });
       });
     });
   </script>
