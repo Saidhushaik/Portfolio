@@ -3,99 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saidhu Hussen Basha Shaik | Portfolio</title>
+  <title>Saidhu Hussen Basha Shaik Portfolio</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f4f8;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      background: #f9f9f9;
       color: #333;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
     }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
     nav a {
-      margin-right: 20px;
+      color: #eee;
+      margin: 0 15px;
       text-decoration: none;
-      color: #007bff;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
-    h1, h2 {
-      color: #2c3e50;
-    }
+
     section {
-      margin-bottom: 40px;
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+      max-width: 700px;
+      margin: 40px auto;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      will-change: opacity, transform;
     }
+
+    section.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    h2 {
+      border-bottom: 2px solid #222;
+      padding-bottom: 8px;
+    }
+
     ul {
-      list-style-type: disc;
-      padding-left: 20px;
+      list-style-type: none;
+      padding-left: 0;
     }
+
+    li {
+      background: white;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 0 5px #ccc;
+    }
+
     footer {
       text-align: center;
+      margin: 40px 0;
+      color: #888;
       font-size: 0.9rem;
-      color: #666;
-      margin-top: 40px;
-    }
-    a {
-      color: #007bff;
     }
   </style>
 </head>
 <body>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <header>
+    <h1>Saidhu Hussen Basha Shaik</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <section id="about">
-    <h1>About Me</h1>
-    <p>
-      I'm <strong>Saidhu Hussen Basha Shaik</strong>, a software developer with 3+ years of experience building scalable full-stack applications and backend systems. 
-      My strengths lie in writing clean, maintainable code, optimizing system performance, and driving automation across the software development lifecycle. 
-      I'm proficient in modern technologies including <strong>Python, C#, JavaScript/TypeScript, React, ASP.NET, NestJS</strong>, and cloud platforms like <strong>Azure</strong> and <strong>AWS</strong>.
-      Passionate about continuous learning, I bring both technical depth and collaborative energy to every team I work with.
-    </p>
+    <h2>About Me</h2>
+    <p>Hello! I'm Saidhu Hussen Basha Shaik, a software developer with 3+ years of experience building scalable full-stack applications and backend systems. I enjoy writing clean, testable code and creating efficient solutions.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li>
-        <strong>Internal UI Components (Erie Insurance)</strong> — Developed 15+ responsive components using React, TypeScript, and CSS for 3 internal platforms.
-      </li>
-      <li>
-        <strong>Backend API & Azure Optimization</strong> — Built REST APIs using NestJS and PostgreSQL; improved Azure Queue processing efficiency by 45%.
-      </li>
-      <li>
-        <strong>Healthcare Web Modules (HashTek Solutions)</strong> — Created ASP.NET MVC and AngularJS modules for healthcare data validation and reporting.
-      </li>
-      <li>
-        <strong>Credit Risk Analysis (Academic Project)</strong> — Built a machine learning model in Python to predict credit default risk with 85% accuracy.
-      </li>
-      <li>
-        <strong>Privacy-Preserving EHR System</strong> — Designed a secure cloud-based EHR database ensuring HIPAA compliance and handling 10k+ patient records.
-      </li>
+      <li>Project One — A cool website built with HTML & CSS.</li>
+      <li>Project Two — A JavaScript game.</li>
+      <li>Project Three — A React portfolio.</li>
+      <li>Credit Risk Analysis using Machine Learning — Built a supervised learning pipeline with Python achieving 85% accuracy.</li>
+      <li>Privacy-Preserving Electronic Health Record (EHR) Database — Designed a secure cloud-based system ensuring HIPAA compliance.</li>
     </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>Master’s in Computer Science from Bay Atlantic University, Jan 2022 to May 2023, GPA 3.82</p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+12402342963">+1 (240) 234-2963</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
+    <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
+    <p>Phone: +1 (240) 234-2963</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank" rel="noopener">linkedin.com/in/saidhu-shaik</a></p>
+    <p>Location: Washington DC</p>
   </section>
 
   <footer>
-    &copy; 2025 Saidhu Hussen Basha Shaik. All rights reserved.
+    &copy; 2025 Saidhu Hussen Basha Shaik
   </footer>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, 
+        { threshold: 0.1 }
+      );
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
 </body>
 </html>
