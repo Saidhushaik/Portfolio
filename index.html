@@ -1,146 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saidhu Hussen Basha Shaik Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a Software Developer with experience in Full Stack, Backend, Cloud, and Agile methodologies.">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 20px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    /* Resume Section */
+    .experience, .skills, .projects, .certifications {
+      background-color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .job, .skill-set, .project {
+      margin-bottom: 30px;
+    }
+
+    .job h3, .project h3 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .job span, .project span {
+      font-size: 1.1em;
+      color: #777;
+    }
+
+    .job ul, .project ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1.2em;
+      text-align: left;
+    }
+
+    .job li, .project li {
+      margin-bottom: 15px;
+    }
+
+    .skill-set p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>Saidhu Hussen Basha Shaik</h1>
-    <nav>
-      <a href="#about" data-target="about">About</a>
-      <a href="#experience" data-target="experience">Professional Experience</a>
-      <a href="#projects" data-target="projects">Academic Projects</a>
-      <a href="#education" data-target="education">Education</a>
-      <a href="#contact" data-target="contact">Contact</a>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+    </ul>
+  </nav>
 
+  <!-- Hero Section (Introduction) -->
   <section id="about">
-    <h2>About Me</h2>
-    <div class="content">
-      <p>
-        Software Developer with 3+ years of experience building and maintaining scalable full-stack applications and backend systems.
-        Proficient in Python, C#, TypeScript, and JavaScript with hands-on experience in RESTful APIs, cloud infrastructure (Azure, AWS), and Agile delivery.
-        Recognized for writing clean, testable code, improving system performance, and driving automation.
-      </p>
-    </div>
+    <h1>Hi, I'm [Your Name]</h1>
+    <p>Software Developer with 3+ years of experience specializing in Full Stack Development and Cloud Technologies. <a href="#contact">Let's connect!</a></p>
   </section>
 
-  <section id="experience">
+  <!-- Professional Experience Section -->
+  <section id="experience" class="experience">
     <h2>Professional Experience</h2>
-    <div class="content">
-      <h3>Erie Insurance, PA — Software Developer (09/2023 – 02/2025)</h3>
+
+    <!-- Erie Insurance -->
+    <div class="job">
+      <h3>Software Developer | Erie Insurance, PA</h3>
+      <span>09/2023 – 02/2025</span>
       <ul>
-        <li>Designed and implemented 15+ responsive frontend components using React, TypeScript, and CSS.</li>
+        <li>Designed and implemented 15+ responsive frontend components using React, TypeScript, and CSS, enhancing UI consistency across 3 internal platforms.</li>
         <li>Engineered backend API endpoints with NestJS and PostgreSQL, reducing form submission errors by 25%.</li>
-        <li>Optimized Azure Storage Queues, cutting processing time by 45%.</li>
-        <li>Reduced CI/CD deployment failures by 30% in Azure DevOps.</li>
-        <li>Improved test coverage from 60% to 85% with unit tests.</li>
+        <li>Streamlined asynchronous workflows by optimizing Azure Storage Queues, cutting processing time by 45%.</li>
+        <li>Diagnosed and resolved CI/CD issues in Azure DevOps, reducing failed deployments by 30%.</li>
+        <li>Conducted 40+ code reviews, resulting in a 15% drop in QA-reported defects.</li>
+        <li>Built unit tests for critical modules, increasing test coverage from 60% to 85%.</li>
+        <li>Participated in Agile ceremonies (standups, sprint planning, retrospectives).</li>
       </ul>
+    </div>
 
-      <h3>HashTek Solutions, India — Software Engineer</h3>
+    <!-- HashTek Solutions -->
+    <div class="job">
+      <h3>Software Engineer | HashTek Solutions, India</h3>
       <ul>
-        <li>Built 10+ UI modules using ASP.NET MVC and AngularJS.</li>
-        <li>Automated data loads with SSIS, saving 40+ hours/month.</li>
-        <li>Wrote 30+ SQL scripts supporting custom reports.</li>
+        <li>Developed 10+ web forms and UI modules using ASP.NET MVC and AngularJS for a national healthcare provider.</li>
+        <li>Integrated APIs and validated health data, reducing input discrepancies by 35%.</li>
+        <li>Automated recurring data loads with SSIS, saving 40+ hours per month.</li>
+        <li>Wrote 30+ stored procedures and SQL scripts supporting custom reports and regulatory audits.</li>
+        <li>Reported and resolved ~25 bugs, accelerating delivery by 2 weeks.</li>
+        <li>Participated in requirement gathering sessions and cross-functional discussions.</li>
       </ul>
     </div>
   </section>
 
-  <section id="projects">
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+    <div class="skill-set">
+      <h3>Languages:</h3>
+      <p>Python, C#, JavaScript, TypeScript, Java, C</p>
+    </div>
+    <div class="skill-set">
+      <h3>Frontend:</h3>
+      <p>React, AngularJS, HTML, CSS</p>
+    </div>
+    <div class="skill-set">
+      <h3>Backend / Frameworks:</h3>
+      <p>NestJS, Node.js, ASP.NET MVC/Core</p>
+    </div>
+    <div class="skill-set">
+      <h3>Cloud & DevOps:</h3>
+      <p>Azure, AWS, Git, CI/CD</p>
+    </div>
+  </section>
+
+  <!-- Academic Projects Section -->
+  <section id="projects" class="projects">
     <h2>Academic Projects</h2>
-    <div class="content">
+    
+    <div class="project">
+      <h3>Credit Risk Analysis using Machine Learning</h3>
+      <span>Bay Atlantic University</span>
       <ul>
-        <li><strong>Credit Risk Analysis using Machine Learning</strong> — Built a supervised learning pipeline in Python with 85% accuracy, using pandas, scikit-learn, and Matplotlib. ROC-AUC: 0.91.</li>
-        <li><strong>Privacy-Preserving Electronic Health Record (EHR)</strong> — Developed a secure cloud-based system handling 10k+ records, ensuring HIPAA compliance and improving usability by 25%.</li>
+        <li>Built a supervised learning pipeline in Python leveraging pandas, scikit-learn, and Matplotlib to predict credit default risk with 85% accuracy.</li>
+        <li>Trained models achieving ROC-AUC 0.91 and precision-recall 0.87 on loan default prediction.</li>
+        <li>Processed 100k+ loan records, improving risk prediction accuracy by 15%.</li>
+      </ul>
+    </div>
+    
+    <div class="project">
+      <h3>Privacy-Preserving Electronic Health Record (EHR) Database</h3>
+      <span>Bay Atlantic University</span>
+      <ul>
+        <li>Designed a secure cloud-based EHR system ensuring HIPAA compliance.</li>
+        <li>Optimized UI design, improving user satisfaction by 25% through enhanced usability-security balance.</li>
       </ul>
     </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <div class="content">
-      <p><strong>Bay Atlantic University</strong><br>
-      Master’s in Computer Science (Jan 2022 – May 2023)<br>
-      GPA: 3.82</p>
-    </div>
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Certified Developer – May 2025</li>
+      <li>Databricks Generative AI – July 2025</li>
+    </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="content">
-      <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
-      <p>Phone: +1 (240) 234-2963</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
-      <p>Location: Washington, DC</p>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Saidhu Hussen Basha Shaik
+    <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const sections = document.querySelectorAll('section');
-
-      // Intersection Observer to animate on scroll
-      const observer = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.1 }
-      );
-      sections.forEach(section => observer.observe(section));
-
-      // Accordion behavior
-      sections.forEach(section => {
-        const header = section.querySelector('h2');
-        const content = section.querySelector('.content');
-
-        header.addEventListener('click', () => {
-          // Close all other sections
-          sections.forEach(s => {
-            if (s !== section) {
-              s.querySelector('.content').classList.remove('active');
-            }
-          });
-
-          // Toggle current section
-          content.classList.toggle('active');
-        });
-      });
-
-      // Nav link scroll + toggle section
-      const navLinks = document.querySelectorAll('nav a');
-      navLinks.forEach(link => {
-        link.addEventListener('click', e => {
-          e.preventDefault();
-          const targetId = link.getAttribute('data-target');
-          const targetSection = document.getElementById(targetId);
-
-          if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-
-            // Close others
-            sections.forEach(section => {
-              section.querySelector('.content').classList.remove('active');
-            });
-
-            // Open selected
-            targetSection.querySelector('.content').classList.add('active');
-          }
-        });
-      });
-    });
-  </script>
 </body>
 </html>
