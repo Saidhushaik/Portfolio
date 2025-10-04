@@ -1,214 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of a Software Developer with experience in Full Stack, Backend, Cloud, and Agile methodologies.">
-  <title>Your Portfolio</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    /* Navigation */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: #333;
-      padding: 15px;
-      text-align: center;
-      z-index: 1000;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 20px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.2em;
-    }
-
-    /* Sections */
-    section {
-      padding: 80px 20px;
-      margin-top: 60px;
-      text-align: center;
-    }
-
-    section h2 {
-      font-size: 2.5em;
-      margin-bottom: 30px;
-    }
-
-    /* Resume Section */
-    .experience, .skills, .projects, .certifications {
-      background-color: #fff;
-      margin-bottom: 40px;
-    }
-
-    .job, .skill-set, .project {
-      margin-bottom: 30px;
-    }
-
-    .job h3, .project h3 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    .job span, .project span {
-      font-size: 1.1em;
-      color: #777;
-    }
-
-    .job ul, .project ul {
-      list-style-type: none;
-      padding: 0;
-      font-size: 1.2em;
-      text-align: left;
-    }
-
-    .job li, .project li {
-      margin-bottom: 15px;
-    }
-
-    .skill-set p {
-      font-size: 1.2em;
-      color: #555;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <meta name="description" content="Saidhu Hussen Basha Shaik | Software Developer Portfolio">
+  <title>Saidhu Hussen Basha Shaik - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Saidhu Hussen Basha Shaik</h2>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </div>
 
-  <!-- Hero Section (Introduction) -->
-  <section id="about">
-    <h1>Hi, I'm [Your Name]</h1>
-    <p>Software Developer with 3+ years of experience specializing in Full Stack Development and Cloud Technologies. <a href="#contact">Let's connect!</a></p>
-  </section>
+  <!-- Main Content -->
+  <div class="content">
+    <!-- About Section -->
+    <section id="about">
+      <h1>About Me</h1>
+      <p>I am a Software Developer with 3+ years of experience in building and maintaining scalable full-stack applications and backend systems. I'm proficient in Python, C#, TypeScript, JavaScript, and more. I’m passionate about writing clean, testable code and driving automation. Let's connect!</p>
+      <p>Location: Washington DC</p>
+      <p>Phone: +1 (240)234-2963</p>
+      <p>Email: hussenb.shaik@gmail.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
+    </section>
 
-  <!-- Professional Experience Section -->
-  <section id="experience" class="experience">
-    <h2>Professional Experience</h2>
-
-    <!-- Erie Insurance -->
-    <div class="job">
-      <h3>Software Developer | Erie Insurance, PA</h3>
-      <span>09/2023 – 02/2025</span>
+    <!-- Experience Section -->
+    <section id="experience">
+      <h1>Professional Experience</h1>
+      <h3>Software Developer at Erie Insurance | 09/2023 – 02/2025</h3>
       <ul>
-        <li>Designed and implemented 15+ responsive frontend components using React, TypeScript, and CSS, enhancing UI consistency across 3 internal platforms.</li>
+        <li>Designed and implemented 15+ responsive frontend components using React, TypeScript, and CSS.</li>
         <li>Engineered backend API endpoints with NestJS and PostgreSQL, reducing form submission errors by 25%.</li>
-        <li>Streamlined asynchronous workflows by optimizing Azure Storage Queues, cutting processing time by 45%.</li>
-        <li>Diagnosed and resolved CI/CD issues in Azure DevOps, reducing failed deployments by 30%.</li>
-        <li>Conducted 40+ code reviews, resulting in a 15% drop in QA-reported defects.</li>
-        <li>Built unit tests for critical modules, increasing test coverage from 60% to 85%.</li>
-        <li>Participated in Agile ceremonies (standups, sprint planning, retrospectives).</li>
+        <li>Streamlined workflows by optimizing Azure Storage Queues, cutting processing time by 45%.</li>
+        <li>Authored internal documentation to support onboarding, deployment, and system configurations.</li>
       </ul>
-    </div>
 
-    <!-- HashTek Solutions -->
-    <div class="job">
-      <h3>Software Engineer | HashTek Solutions, India</h3>
+      <h3>Software Engineer at HashTek Solutions | Dates</h3>
       <ul>
         <li>Developed 10+ web forms and UI modules using ASP.NET MVC and AngularJS for a national healthcare provider.</li>
-        <li>Integrated APIs and validated health data, reducing input discrepancies by 35%.</li>
-        <li>Automated recurring data loads with SSIS, saving 40+ hours per month.</li>
-        <li>Wrote 30+ stored procedures and SQL scripts supporting custom reports and regulatory audits.</li>
-        <li>Reported and resolved ~25 bugs, accelerating delivery by 2 weeks.</li>
-        <li>Participated in requirement gathering sessions and cross-functional discussions.</li>
+        <li>Automated recurring data loads with SSIS, reducing manual workload by 40+ hours per month.</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Technical Skills</h2>
-    <div class="skill-set">
-      <h3>Languages:</h3>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1>Technical Skills</h1>
+      <h3>Languages</h3>
       <p>Python, C#, JavaScript, TypeScript, Java, C</p>
-    </div>
-    <div class="skill-set">
-      <h3>Frontend:</h3>
+
+      <h3>Frontend</h3>
       <p>React, AngularJS, HTML, CSS</p>
-    </div>
-    <div class="skill-set">
-      <h3>Backend / Frameworks:</h3>
+
+      <h3>Backend</h3>
       <p>NestJS, Node.js, ASP.NET MVC/Core</p>
-    </div>
-    <div class="skill-set">
-      <h3>Cloud & DevOps:</h3>
+
+      <h3>Cloud & DevOps</h3>
       <p>Azure, AWS, Git, CI/CD</p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Academic Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Academic Projects</h2>
-    
-    <div class="project">
+    <!-- Projects Section -->
+    <section id="projects">
+      <h1>Academic Projects</h1>
       <h3>Credit Risk Analysis using Machine Learning</h3>
-      <span>Bay Atlantic University</span>
       <ul>
-        <li>Built a supervised learning pipeline in Python leveraging pandas, scikit-learn, and Matplotlib to predict credit default risk with 85% accuracy.</li>
+        <li>Built a supervised learning pipeline in Python to predict credit default risk with 85% accuracy.</li>
         <li>Trained models achieving ROC-AUC 0.91 and precision-recall 0.87 on loan default prediction.</li>
-        <li>Processed 100k+ loan records, improving risk prediction accuracy by 15%.</li>
       </ul>
-    </div>
-    
-    <div class="project">
-      <h3>Privacy-Preserving Electronic Health Record (EHR) Database</h3>
-      <span>Bay Atlantic University</span>
+
+      <h3>Privacy-Preserving Electronic Health Record Database</h3>
       <ul>
-        <li>Designed a secure cloud-based EHR system ensuring HIPAA compliance.</li>
-        <li>Optimized UI design, improving user satisfaction by 25% through enhanced usability-security balance.</li>
+        <li>Designed a cloud-based EHR system, ensuring HIPAA compliance and handling 10k+ patient records.</li>
+        <li>Optimized UI design, improving user satisfaction scores by 25% during testing.</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications" class="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Certified Developer – May 2025</li>
-      <li>Databricks Generative AI – July 2025</li>
-    </ul>
-  </section>
+    <!-- Certifications Section -->
+    <section id="certifications">
+      <h1>Certifications</h1>
+      <ul>
+        <li>AWS Certified Developer – May 2025</li>
+        <li>Databricks Generative AI – July 2025</li>
+      </ul>
+    </section>
 
-  <!-- Footer -->
+    <!-- Contact Section -->
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <p>Feel free to reach out via email or LinkedIn for any opportunities or inquiries!</p>
+    </section>
+  </div>
+
   <footer>
-    <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+    <p>&copy; 2025 Saidhu Hussen Basha Shaik. All Rights Reserved.</p>
   </footer>
 </body>
+
 </html>
