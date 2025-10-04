@@ -1,109 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Saidhu Hussen Basha Shaik | Software Developer Portfolio">
-  <title>Saidhu Hussen Basha Shaik - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Saidhu Hussen Basha Shaik - Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h2>Saidhu Hussen Basha Shaik</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
 
-  <!-- Main Content -->
-  <div class="content">
-    <!-- About Section -->
-    <section id="about">
-      <h1>About Me</h1>
-      <p>I am a Software Developer with 3+ years of experience in building and maintaining scalable full-stack applications and backend systems. I'm proficient in Python, C#, TypeScript, JavaScript, and more. I’m passionate about writing clean, testable code and driving automation. Let's connect!</p>
-      <p>Location: Washington DC</p>
-      <p>Phone: +1 (240)234-2963</p>
-      <p>Email: hussenb.shaik@gmail.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
-    </section>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1>Saidhu Hussen Basha Shaik</h1>
+      <h2>Software Developer</h2>
+      <p>Building scalable applications, backend systems, and cloud-native solutions.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </header>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <h1>Professional Experience</h1>
-      <h3>Software Developer at Erie Insurance | 09/2023 – 02/2025</h3>
+  <!-- Summary -->
+  <section class="about">
+    <div class="container">
+      <h2>Summary</h2>
+      <p>
+        Software Developer with 3+ years of experience building and maintaining scalable full-stack applications and backend systems. 
+        Proficient in Python, C#, TypeScript, and JavaScript with hands-on experience in RESTful APIs, cloud infrastructure (Azure, AWS), 
+        and Agile delivery. Recognized for writing clean, testable code, improving system performance, and driving automation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
       <ul>
-        <li>Designed and implemented 15+ responsive frontend components using React, TypeScript, and CSS.</li>
+        <li><strong>Languages:</strong> Python, C#, JavaScript, TypeScript, Java, C</li>
+        <li><strong>Frontend:</strong> React, AngularJS, HTML, CSS</li>
+        <li><strong>Backend / Frameworks:</strong> NestJS, Node.js, ASP.NET MVC/Core</li>
+        <li><strong>Databases:</strong> PostgreSQL, SQL Server, SSIS, ETL pipelines</li>
+        <li><strong>Cloud & DevOps:</strong> Azure (Storage Queues, Azure DevOps), AWS (Certified Developer), Git, CI/CD</li>
+        <li><strong>Tools & Practices:</strong> TDD, Unit Testing, Agile (Scrum/Kanban), GitHub, Bitbucket, JIRA</li>
+        <li><strong>Other:</strong> REST APIs, Microservices (basic), Technical Documentation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="education">
+    <div class="container">
+      <h2>Education</h2>
+      <p><strong>Master’s in Computer Science</strong>, Bay Atlantic University (2022–2023)</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience">
+    <div class="container">
+      <h2>Professional Experience</h2>
+
+      <h3>Software Developer — Erie Insurance, PA <span class="date">09/2023 – 02/2025</span></h3>
+      <ul>
+        <li>Designed and implemented 15+ responsive frontend components using React, TypeScript, and CSS, enhancing UI consistency across 3 internal platforms.</li>
         <li>Engineered backend API endpoints with NestJS and PostgreSQL, reducing form submission errors by 25%.</li>
-        <li>Streamlined workflows by optimizing Azure Storage Queues, cutting processing time by 45%.</li>
-        <li>Authored internal documentation to support onboarding, deployment, and system configurations.</li>
+        <li>Optimized Azure Storage Queues workflows, cutting processing time by 45%.</li>
+        <li>Resolved CI/CD issues in Azure DevOps, reducing failed deployments by 30%.</li>
+        <li>Conducted 40+ code reviews, reducing QA-reported defects by 15%.</li>
+        <li>Built unit tests increasing coverage from 60% to 85%.</li>
       </ul>
 
-      <h3>Software Engineer at HashTek Solutions | Dates</h3>
+      <h3>Software Engineer — HashTek Solutions, India</h3>
       <ul>
-        <li>Developed 10+ web forms and UI modules using ASP.NET MVC and AngularJS for a national healthcare provider.</li>
-        <li>Automated recurring data loads with SSIS, reducing manual workload by 40+ hours per month.</li>
+        <li>Developed 10+ UI modules using ASP.NET MVC and AngularJS for a national healthcare provider.</li>
+        <li>Automated data loads with SSIS, saving 40+ hours monthly.</li>
+        <li>Wrote 30+ SQL scripts for reporting and audits.</li>
+        <li>Resolved ~25 QA bugs, accelerating delivery by 2 weeks.</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h1>Technical Skills</h1>
-      <h3>Languages</h3>
-      <p>Python, C#, JavaScript, TypeScript, Java, C</p>
+  <!-- Academic Projects -->
+  <section class="projects">
+    <div class="container">
+      <h2>Academic Projects</h2>
 
-      <h3>Frontend</h3>
-      <p>React, AngularJS, HTML, CSS</p>
+      <div class="card">
+        <h3>Credit Risk Analysis using Machine Learning</h3>
+        <p>Built supervised ML pipeline in Python with scikit-learn, pandas, and Matplotlib. Achieved 85% accuracy and ROC-AUC 0.91.</p>
+      </div>
 
-      <h3>Backend</h3>
-      <p>NestJS, Node.js, ASP.NET MVC/Core</p>
+      <div class="card">
+        <h3>Privacy-Preserving EHR Database</h3>
+        <p>Designed secure cloud-based EHR system handling 10k+ patient records, ensuring HIPAA compliance. Optimized UI usability, increasing satisfaction scores by 25%.</p>
+      </div>
+    </div>
+  </section>
 
-      <h3>Cloud & DevOps</h3>
-      <p>Azure, AWS, Git, CI/CD</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <h1>Academic Projects</h1>
-      <h3>Credit Risk Analysis using Machine Learning</h3>
+  <!-- Certifications -->
+  <section class="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
       <ul>
-        <li>Built a supervised learning pipeline in Python to predict credit default risk with 85% accuracy.</li>
-        <li>Trained models achieving ROC-AUC 0.91 and precision-recall 0.87 on loan default prediction.</li>
+        <li>AWS Certified Developer — 05/2025</li>
+        <li>Databricks Generative AI — 07/2025</li>
       </ul>
+    </div>
+  </section>
 
-      <h3>Privacy-Preserving Electronic Health Record Database</h3>
-      <ul>
-        <li>Designed a cloud-based EHR system, ensuring HIPAA compliance and handling 10k+ patient records.</li>
-        <li>Optimized UI design, improving user satisfaction scores by 25% during testing.</li>
-      </ul>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <h1>Certifications</h1>
-      <ul>
-        <li>AWS Certified Developer – May 2025</li>
-        <li>Databricks Generative AI – July 2025</li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h1>Contact Me</h1>
-      <p>Feel free to reach out via email or LinkedIn for any opportunities or inquiries!</p>
-    </section>
-  </div>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>📍 Washington DC</p>
+      <p>📧 <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
+      <p>📞 +1 (240)234-2963</p>
+      <p>🔗 <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Saidhu Hussen Basha Shaik. All Rights Reserved.</p>
+    <p>© 2025 Saidhu Hussen Basha Shaik</p>
   </footer>
-</body>
 
+</body>
 </html>
