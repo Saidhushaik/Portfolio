@@ -3,53 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saidhu Hussen Basha Shaik – Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <title>Hybrid Section Navigation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1b1464, #3a0ca3);
+      color: white;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: white;
+    }
+
+    header p.subtitle {
+      margin: 10px 0 25px;
+      font-size: 1.2rem;
+      color: #90caf9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    nav button {
+      background-color: #635dff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      min-width: 90px;
+    }
+
+    nav button.active {
+      background-color: #00bcd4;
+      color: #1b1464;
+    }
+
+    section {
+      margin-bottom: 60px;
+      opacity: 0;
+      transform: scale(0.95);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      padding: 15px 10px;
+      border-radius: 8px;
+      background: rgba(0,0,0,0.2);
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    section h2 {
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    /* Show scroll bar for body */
+    body, html {
+      scroll-behavior: smooth;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="left-panel">
-    <div class="highlight-item">
-      <div class="icon">⏱️</div>
-      <div class="text">
-        <div class="bold">45% faster</div>
-        <div>processes</div>
-      </div>
-    </div>
-    <div class="highlight-item">
-      <div class="icon">///</div>
-      <div class="text">
-        <div class="bold">15+</div>
-        <div>React components</div>
-      </div>
-    </div>
-    <div class="highlight-item">
-      <div class="icon">☁️</div>
-      <div class="text">
-        <div class="bold">AWS</div>
-        <div>Certified</div>
-      </div>
-    </div>
-  </div>
+  <div class="container">
 
-  <main>
     <header>
       <h1>Saidhu Hussen Basha Shaik</h1>
-      <p class="subtitle">
-        Full-Stack Developer | <span class="highlight">3+ Years Experience</span>
-      </p>
+      <p class="subtitle">Full-Stack Developer | <span style="color:#00bcd4;font-weight:700;">3+ Years Experience</span></p>
       <nav>
-        <button data-scroll="about">About</button>
-        <button data-scroll="skills">Skills</button>
-        <button data-scroll="certifications">Certification</button>
-        <button data-scroll="education">Education</button>
-        <button data-scroll="projects">Projects</button>
-        <button data-scroll="contact">Contact</button>
+        <button class="active" data-section="main">Home</button>
+        <button data-section="about">About</button>
+        <button data-section="skills">Skills</button>
+        <button data-section="certifications">Certification</button>
+        <button data-section="education">Education</button>
+        <button data-section="projects">Projects</button>
+        <button data-section="contact">Contact</button>
       </nav>
     </header>
 
-    <section id="about" class="fade-in">
+    <section id="main" class="visible">
+      <p>Welcome to my portfolio! Click the buttons above to see more.</p>
+    </section>
+
+    <section id="about">
       <h2>About Me</h2>
       <p>
         Software Developer with 3+ years of experience building and maintaining scalable full-stack applications and backend systems.
@@ -58,23 +121,23 @@
       </p>
     </section>
 
-    <section id="skills" class="fade-in">
+    <section id="skills">
       <h2>Technical Skills</h2>
-      <ul class="skill-list">
-        <li><span class="icon">🟢</span> Node.js</li>
-        <li><span class="icon">☁️</span> AWS</li>
-        <li><span class="icon">💻</span> JavaScript</li>
-        <li><span class="icon">⏩</span> TypeScript</li>
-        <li><span class="icon">🐍</span> Python</li>
-        <li><span class="icon">🅰️</span> Azure</li>
-        <li><span class="icon">🌐</span> HTML5</li>
-        <li><span class="icon">🎨</span> CSS3</li>
-        <li><span class="icon">🗄️</span> PostgreSQL</li>
-        <li><span class="icon">📊</span> SQL Server</li>
+      <ul>
+        <li>Node.js</li>
+        <li>AWS</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>Python</li>
+        <li>Azure</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>PostgreSQL</li>
+        <li>SQL Server</li>
       </ul>
     </section>
 
-    <section id="certifications" class="fade-in">
+    <section id="certifications">
       <h2>Certifications</h2>
       <ul>
         <li>AWS Certified Developer – 05/2025</li>
@@ -82,12 +145,12 @@
       </ul>
     </section>
 
-    <section id="education" class="fade-in">
+    <section id="education">
       <h2>Education</h2>
       <p>Master’s in Computer Science from Bay Atlantic University (2022–2023)</p>
     </section>
 
-    <section id="projects" class="fade-in">
+    <section id="projects">
       <h2>Professional Experience</h2>
       <strong>Erie Insurance, PA | Software Developer (09/2023 – 02/2025)</strong>
       <ul>
@@ -119,27 +182,75 @@
       </ul>
     </section>
 
-    <section id="contact" class="fade-in">
+    <section id="contact">
       <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
+      <p>Email: <a href="mailto:hussenb.shaik@gmail.com" style="color:#00bcd4;">hussenb.shaik@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank" style="color:#00bcd4;">linkedin.com/in/saidhu-shaik</a></p>
     </section>
-  </main>
 
-  <div class="right-panel">
-    <ul class="skills-icons">
-      <li>🟢 Node.js</li>
-      <li>☁️ AWS</li>
-      <li>💻 JavaScript</li>
-      <li>⏩ TypeScript</li>
-      <li>🐍 Python</li>
-      <li>🅰️ Azure</li>
-      <li>🌐 HTML5</li>
-      <li>🎨 CSS3</li>
-      <li>🗄️ PostgreSQL</li>
-      <li>📊 SQL Server</li>
-    </ul>
   </div>
+
+  <script>
+    const buttons = document.querySelectorAll('nav button');
+    const sections = document.querySelectorAll('section');
+
+    let manualScroll = false; // Flag to track manual scroll mode
+
+    // On nav button click:
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        manualScroll = false; // Disable manual scroll mode
+
+        const targetId = button.getAttribute('data-section');
+        const targetSection = document.getElementById(targetId);
+
+        // Update active button styles
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        // Hide all sections except the target
+        sections.forEach(section => {
+          if (section === targetSection) {
+            section.classList.add('visible');
+            // Scroll to target section smoothly
+            section.scrollIntoView({behavior: 'smooth'});
+          } else {
+            section.classList.remove('visible');
+          }
+        });
+      });
+    });
+
+    // On scroll: show all sections and highlight nav button for visible section
+    window.addEventListener('scroll', () => {
+      if (!manualScroll) {
+        manualScroll = true; // Manual scrolling started, enable scroll mode
+
+        // Show all sections when user scrolls manually
+        sections.forEach(section => section.classList.add('visible'));
+      }
+
+      // Find section closest to top (but still visible)
+      let currentSectionId = sections[0].id;
+      let minDistance = window.innerHeight;
+
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top < minDistance) {
+          minDistance = rect.top;
+          currentSectionId = section.id;
+        }
+      });
+
+      // Highlight nav button for currentSectionId
+      buttons.forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-section') === currentSectionId);
+      });
+    });
+
+    // Trigger scroll event on page load to set correct nav highlight
+    window.dispatchEvent(new Event('scroll'));
+  </script>
 
 </body>
 </html>
