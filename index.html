@@ -2,106 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saidhu Hussen Basha Shaik – Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-  <!-- NAVIGATION BAR -->
-  <nav>
-    <div class="buttons">
-      <button data-scroll="about">About</button>
-      <button data-scroll="skills">Skills</button>
-      <button data-scroll="education">Education</button>
-      <button data-scroll="projects">Projects</button>
-      <button data-scroll="certifications">Certifications</button>
-      <button data-scroll="contact">Contact</button>
+  <div class="left-panel">
+    <div class="highlight-item">
+      <div class="icon">⏱️</div>
+      <div class="text">
+        <div class="bold">45% faster</div>
+        <div>processes</div>
+      </div>
     </div>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <div class="container" style="margin-top: 60px;">
-    <div class="center-panel">
-      <h1>Saidhu Hussen Basha Shaik</h1>
-      <h2>Full-Stack Developer | 3+ Years Experience</h2>
+    <div class="highlight-item">
+      <div class="icon">///</div>
+      <div class="text">
+        <div class="bold">15+</div>
+        <div>React components</div>
+      </div>
+    </div>
+    <div class="highlight-item">
+      <div class="icon">☁️</div>
+      <div class="text">
+        <div class="bold">AWS</div>
+        <div>Certified</div>
+      </div>
     </div>
   </div>
 
-  <!-- MAIN SECTIONS -->
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>
-      Software Developer with 3+ years of experience building and maintaining scalable full-stack applications and backend systems.
-      Proficient in Python, C#, TypeScript, and JavaScript with hands-on experience in RESTful APIs, cloud infrastructure (Azure, AWS), and Agile delivery.
-      Recognized for writing clean, testable code, improving system performance, and driving automation.
-    </p>
-  </section>
+  <main>
+    <header>
+      <h1>Saidhu Hussen Basha Shaik</h1>
+      <p class="subtitle">
+        Full-Stack Developer | <span class="highlight">3+ Years Experience</span>
+      </p>
+      <nav>
+        <button data-scroll="about">About</button>
+        <button data-scroll="skills">Skills</button>
+        <button data-scroll="certifications">Certification</button>
+        <button data-scroll="education">Education</button>
+        <button data-scroll="projects">Projects</button>
+        <button data-scroll="contact">Contact</button>
+      </nav>
+    </header>
 
-  <section id="skills" class="fade-in">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Languages: Python, C#, JavaScript, TypeScript, Java, C</li>
-      <li>Frontend: React, AngularJS, HTML, CSS</li>
-      <li>Backend / Frameworks: NestJS, Node.js, ASP.NET MVC/Core</li>
-      <li>Databases: PostgreSQL, SQL Server, SSIS, ETL pipelines</li>
-      <li>Cloud & DevOps: Azure (Storage Queues, Azure DevOps), AWS (Certified Developer), Git, CI/CD</li>
-      <li>Tools & Practices: TDD, Unit Testing, Agile (Scrum/Kanban), GitHub, Bitbucket, JIRA</li>
-      <li>Other: REST APIs, Microservices (basic), Technical Documentation</li>
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>
+        Software Developer with 3+ years of experience building and maintaining scalable full-stack applications and backend systems.
+        Proficient in Python, C#, TypeScript, and JavaScript with hands-on experience in RESTful APIs, cloud infrastructure (Azure, AWS), and Agile delivery.
+        Recognized for writing clean, testable code, improving system performance, and driving automation.
+      </p>
+    </section>
+
+    <section id="skills" class="fade-in">
+      <h2>Technical Skills</h2>
+      <ul class="skill-list">
+        <li><span class="icon">🟢</span> Node.js</li>
+        <li><span class="icon">☁️</span> AWS</li>
+        <li><span class="icon">💻</span> JavaScript</li>
+        <li><span class="icon">⏩</span> TypeScript</li>
+        <li><span class="icon">🐍</span> Python</li>
+        <li><span class="icon">🅰️</span> Azure</li>
+        <li><span class="icon">🌐</span> HTML5</li>
+        <li><span class="icon">🎨</span> CSS3</li>
+        <li><span class="icon">🗄️</span> PostgreSQL</li>
+        <li><span class="icon">📊</span> SQL Server</li>
+      </ul>
+    </section>
+
+    <section id="certifications" class="fade-in">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified Developer – 05/2025</li>
+        <li>Databricks Generative AI – 07/2025</li>
+      </ul>
+    </section>
+
+    <section id="education" class="fade-in">
+      <h2>Education</h2>
+      <p>Master’s in Computer Science from Bay Atlantic University (2022–2023)</p>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Professional Experience</h2>
+      <strong>Erie Insurance, PA | Software Developer (09/2023 – 02/2025)</strong>
+      <ul>
+        <li>Built 15+ frontend components with React & TypeScript.</li>
+        <li>Developed APIs with NestJS & PostgreSQL; reduced form errors by 25%.</li>
+        <li>Optimized Azure Storage Queues, improving processing time by 45%.</li>
+        <li>Resolved Azure DevOps CI/CD issues, cutting failed deployments by 30%.</li>
+        <li>Wrote documentation and increased unit test coverage to 85%.</li>
+      </ul>
+
+      <strong>HashTek Solutions, India | Software Engineer</strong>
+      <ul>
+        <li>Developed 10+ web forms using ASP.NET MVC and AngularJS.</li>
+        <li>Automated data loads with SSIS saving 40+ hours monthly.</li>
+        <li>Wrote SQL scripts for regulatory audits, resolved 25+ bugs in QA cycles.</li>
+      </ul>
+
+      <h3>Academic Projects</h3>
+      <strong>Credit Risk Analysis using ML | Bay Atlantic University</strong>
+      <ul>
+        <li>85% accuracy, ROC-AUC 0.91 using scikit-learn, pandas.</li>
+        <li>Handled class imbalance and processed 100k+ loan records.</li>
+      </ul>
+
+      <strong>Privacy-Preserving EHR System | Bay Atlantic University</strong>
+      <ul>
+        <li>Built HIPAA-compliant system managing 10k+ patient records.</li>
+        <li>Improved UI usability by 25%, ensured secure cloud handling.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
+    </section>
+  </main>
+
+  <div class="right-panel">
+    <ul class="skills-icons">
+      <li>🟢 Node.js</li>
+      <li>☁️ AWS</li>
+      <li>💻 JavaScript</li>
+      <li>⏩ TypeScript</li>
+      <li>🐍 Python</li>
+      <li>🅰️ Azure</li>
+      <li>🌐 HTML5</li>
+      <li>🎨 CSS3</li>
+      <li>🗄️ PostgreSQL</li>
+      <li>📊 SQL Server</li>
     </ul>
-  </section>
+  </div>
 
-  <section id="education" class="fade-in">
-    <h2>Education</h2>
-    <p>Master’s in Computer Science from Bay Atlantic University (2022–2023)</p>
-  </section>
-
-  <section id="projects" class="fade-in">
-    <h2>Professional Experience</h2>
-    <strong>Erie Insurance, PA | Software Developer (09/2023 – 02/2025)</strong>
-    <ul>
-      <li>Built 15+ frontend components with React & TypeScript.</li>
-      <li>Developed APIs with NestJS & PostgreSQL; reduced form errors by 25%.</li>
-      <li>Optimized Azure Storage Queues, improving processing time by 45%.</li>
-      <li>Resolved Azure DevOps CI/CD issues, cutting failed deployments by 30%.</li>
-      <li>Wrote documentation and increased unit test coverage to 85%.</li>
-    </ul>
-
-    <strong>HashTek Solutions, India | Software Engineer</strong>
-    <ul>
-      <li>Developed 10+ web forms using ASP.NET MVC and AngularJS.</li>
-      <li>Automated data loads with SSIS saving 40+ hours monthly.</li>
-      <li>Wrote SQL scripts for regulatory audits, resolved 25+ bugs in QA cycles.</li>
-    </ul>
-
-    <h2>Academic Projects</h2>
-    <strong>Credit Risk Analysis using ML | Bay Atlantic University</strong>
-    <ul>
-      <li>85% accuracy, ROC-AUC 0.91 using scikit-learn, pandas.</li>
-      <li>Handled class imbalance and processed 100k+ loan records.</li>
-    </ul>
-
-    <strong>Privacy-Preserving EHR System | Bay Atlantic University</strong>
-    <ul>
-      <li>Built HIPAA-compliant system managing 10k+ patient records.</li>
-      <li>Improved UI usability by 25%, ensured secure cloud handling.</li>
-    </ul>
-  </section>
-
-  <section id="certifications" class="fade-in">
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Certified Developer – 05/2025</li>
-      <li>Databricks Generative AI – 07/2025</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="fade-in">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
-  </section>
-
-  <script src="script.js"></script>
 </body>
 </html>
