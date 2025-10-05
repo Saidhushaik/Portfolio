@@ -1,281 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name - Software Engineer Portfolio</title>
-  <style>
-    /* Reset and base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    a {
-      color: #7c3aed;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    a:hover {
-      color: #a78bfa;
-    }
-
-    /* Container */
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      flex-grow: 1;
-    }
-
-    /* Header / Hero */
-    header {
-      text-align: center;
-      padding: 4rem 1rem 3rem;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      color: #a78bfa;
-    }
-
-    header p {
-      font-size: 1.25rem;
-      color: #c4b5fd;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-    }
-
-    /* Buttons */
-    .btn-group {
-      display: flex;
-      justify-content: center;
-      gap: 1.2rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      background-color: #7c3aed;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.6rem;
-      font-size: 1.1rem;
-      font-weight: 600;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-align: center;
-      min-width: 140px;
-    }
-
-    .btn:hover {
-      background-color: #a78bfa;
-    }
-
-    /* Social Icons */
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      font-size: 1.8rem;
-      margin-bottom: 3rem;
-    }
-
-    /* Use simple text icons here; you can swap to SVG or font icons */
-    .social-icons a {
-      color: #a78bfa;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 0.2rem 0.5rem;
-      border: 2px solid #7c3aed;
-      border-radius: 6px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      background-color: #7c3aed;
-      color: white;
-    }
-
-    /* Sections */
-    section {
-      margin-bottom: 4rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-      color: #a78bfa;
-      margin-bottom: 1.5rem;
-      border-bottom: 2px solid #7c3aed;
-      display: inline-block;
-      padding-bottom: 0.3rem;
-    }
-
-    /* Projects Grid */
-    .projects-grid {
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-
-    .project-card {
-      background-color: #1e1e2f;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
-      transition: transform 0.2s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .project-title {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-      color: #d8b4fe;
-    }
-
-    .project-desc {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      color: #c4b5fd;
-    }
-
-    .project-tech {
-      font-size: 0.9rem;
-      color: #a78bfa;
-      font-style: italic;
-    }
-
-    /* Skills List */
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-    }
-
-    .skill {
-      background-color: #7c3aed;
-      padding: 0.5rem 1rem;
-      border-radius: 9999px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: white;
-      user-select: none;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #888;
-      background-color: #1a1a2e;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia Smith - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Hi all 👋 I’m Your Name</h1>
-      <p>
-        I’m a passionate Full-Stack Developer with 3 years of experience building
-        web & mobile applications using JavaScript, React, Node.js, and more.
-      </p>
-      <div class="btn-group">
-        <a href="#projects" class="btn">See My Work</a>
-        <a href="/resume.pdf" class="btn" download>Download Resume</a>
-        <a href="#contact" class="btn">Contact Me</a>
-      </div>
-      <div class="social-icons">
-        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer">Twitter</a>
-      </div>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="profile-icon.svg" alt="Profile" class="profile-icon">
+                <span>Alicia Smith</span>
+            </div>
+            <div class="nav-links">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About me</a>
+                <a href="#blog">Blog</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="contact-btn">Contact me</a>
+            </div>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-title">Project One</div>
-          <div class="project-desc">
-            A web application for managing tasks and deadlines efficiently.
-          </div>
-          <div class="project-tech">React, Node.js, MongoDB</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Alicia Smith</p>
+                <h1 class="hero-title">Your go-to engineer for Next.js projects</h1>
+                <p class="hero-description">
+                    Bringing your ideas to life with clean, efficient, and scalable code. 
+                    Whether it's building web apps, optimizing performance, or solving 
+                    complex technical challenges.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Contact me</button>
+                    <button class="btn-secondary">View projects</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="grid-background"></div>
+                <div class="floating-squares">
+                    <div class="square square-1"></div>
+                    <div class="square square-2"></div>
+                    <div class="square square-3"></div>
+                    <div class="square square-4"></div>
+                </div>
+                <div class="portrait">
+                    <!-- You can replace this with an actual image -->
+                    <div class="portrait-placeholder"></div>
+                </div>
+            </div>
         </div>
-        <div class="project-card">
-          <div class="project-title">Project Two</div>
-          <div class="project-desc">
-            E-commerce platform with payment gateway integration.
-          </div>
-          <div class="project-tech">Vue.js, Firebase, Stripe API</div>
-        </div>
-        <div class="project-card">
-          <div class="project-title">Project Three</div>
-          <div class="project-desc">
-            Mobile app for social networking and event planning.
-          </div>
-          <div class="project-tech">React Native, GraphQL, AWS</div>
-        </div>
-      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills & Tech Stack</h2>
-      <div class="skills-list">
-        <div class="skill">JavaScript</div>
-        <div class="skill">React</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">Express</div>
-        <div class="skill">MongoDB</div>
-        <div class="skill">TypeScript</div>
-        <div class="skill">GraphQL</div>
-        <div class="skill">AWS</div>
-        <div class="skill">Docker</div>
-      </div>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-container">
+            <p class="section-subtitle">PORTFOLIO</p>
+            <h2 class="section-title">Discover what I've created</h2>
+            <p class="section-description">
+                Each piece reflects my passion for innovation and commitment to delivering
+            </p>
+        </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>
-        Feel free to reach out via email or connect on LinkedIn!
-      </p>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-username</a></p>
-    </section>
-  </div>
-
-  <footer>
-    &copy; 2025 Your Name. All rights reserved.
-  </footer>
+    <!-- Mobile Hero (for responsive) -->
+    <div class="mobile-hero">
+        <div class="mobile-profile">
+            <img src="profile-icon.svg" alt="Profile" class="mobile-profile-icon">
+        </div>
+        <div class="mobile-content">
+            <p class="mobile-name">Alicia Smith</p>
+            <h1 class="mobile-title">Your go-to engineer for Next.js projects</h1>
+            <p class="mobile-description">
+                Bringing your ideas to life with clean, efficient, and scalable code. Whether 
+                it's building web apps, optimizing performance, or solving complex 
+                technical challenges.
+            </p>
+            <div class="mobile-buttons">
+                <button class="btn-primary">Contact me</button>
+                <button class="btn-secondary">View projects</button>
+            </div>
+        </div>
+        <div class="mobile-portfolio">
+            <p class="mobile-portfolio-subtitle">PORTFOLIO</p>
+            <h2 class="mobile-portfolio-title">Discover what</h2>
+        </div>
+    </div>
 </body>
 </html>
