@@ -1,127 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saidhu Hussen Basha Shaik - Software Developer</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name - Software Engineer Portfolio</title>
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    a {
+      color: #7c3aed;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #a78bfa;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      flex-grow: 1;
+    }
+
+    /* Header / Hero */
+    header {
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #a78bfa;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      color: #c4b5fd;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    /* Buttons */
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background-color: #7c3aed;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.6rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-align: center;
+      min-width: 140px;
+    }
+
+    .btn:hover {
+      background-color: #a78bfa;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Use simple text icons here; you can swap to SVG or font icons */
+    .social-icons a {
+      color: #a78bfa;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.5rem;
+      border: 2px solid #7c3aed;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background-color: #7c3aed;
+      color: white;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #a78bfa;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #7c3aed;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .project-card {
+      background-color: #1e1e2f;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #d8b4fe;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #c4b5fd;
+    }
+
+    .project-tech {
+      font-size: 0.9rem;
+      color: #a78bfa;
+      font-style: italic;
+    }
+
+    /* Skills List */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .skill {
+      background-color: #7c3aed;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: white;
+      user-select: none;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      background-color: #1a1a2e;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Hero -->
-  <header class="hero">
-    <div class="container">
-      <h1>Saidhu Hussen Basha Shaik</h1>
-      <h2>Software Developer</h2>
-      <p>Building scalable applications, backend systems, and cloud-native solutions.</p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-  </header>
-
-  <!-- Summary -->
-  <section class="about">
-    <div class="container">
-      <h2>Summary</h2>
+  <div class="container">
+    <header>
+      <h1>Hi all 👋 I’m Your Name</h1>
       <p>
-        Software Developer with 3+ years of experience building and maintaining scalable full-stack applications and backend systems. 
-        Proficient in Python, C#, TypeScript, and JavaScript with hands-on experience in RESTful APIs, cloud infrastructure (Azure, AWS), 
-        and Agile delivery. Recognized for writing clean, testable code, improving system performance, and driving automation.
+        I’m a passionate Full-Stack Developer with 3 years of experience building
+        web & mobile applications using JavaScript, React, Node.js, and more.
       </p>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="skills">
-    <div class="container">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Python, C#, JavaScript, TypeScript, Java, C</li>
-        <li><strong>Frontend:</strong> React, AngularJS, HTML, CSS</li>
-        <li><strong>Backend / Frameworks:</strong> NestJS, Node.js, ASP.NET MVC/Core</li>
-        <li><strong>Databases:</strong> PostgreSQL, SQL Server, SSIS, ETL pipelines</li>
-        <li><strong>Cloud & DevOps:</strong> Azure (Storage Queues, Azure DevOps), AWS (Certified Developer), Git, CI/CD</li>
-        <li><strong>Tools & Practices:</strong> TDD, Unit Testing, Agile (Scrum/Kanban), GitHub, Bitbucket, JIRA</li>
-        <li><strong>Other:</strong> REST APIs, Microservices (basic), Technical Documentation</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section class="education">
-    <div class="container">
-      <h2>Education</h2>
-      <p><strong>Master’s in Computer Science</strong>, Bay Atlantic University (2022–2023)</p>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section class="experience">
-    <div class="container">
-      <h2>Professional Experience</h2>
-
-      <h3>Software Developer — Erie Insurance, PA <span class="date">09/2023 – 02/2025</span></h3>
-      <ul>
-        <li>Designed and implemented 15+ responsive frontend components using React, TypeScript, and CSS, enhancing UI consistency across 3 internal platforms.</li>
-        <li>Engineered backend API endpoints with NestJS and PostgreSQL, reducing form submission errors by 25%.</li>
-        <li>Optimized Azure Storage Queues workflows, cutting processing time by 45%.</li>
-        <li>Resolved CI/CD issues in Azure DevOps, reducing failed deployments by 30%.</li>
-        <li>Conducted 40+ code reviews, reducing QA-reported defects by 15%.</li>
-        <li>Built unit tests increasing coverage from 60% to 85%.</li>
-      </ul>
-
-      <h3>Software Engineer — HashTek Solutions, India</h3>
-      <ul>
-        <li>Developed 10+ UI modules using ASP.NET MVC and AngularJS for a national healthcare provider.</li>
-        <li>Automated data loads with SSIS, saving 40+ hours monthly.</li>
-        <li>Wrote 30+ SQL scripts for reporting and audits.</li>
-        <li>Resolved ~25 QA bugs, accelerating delivery by 2 weeks.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Academic Projects -->
-  <section class="projects">
-    <div class="container">
-      <h2>Academic Projects</h2>
-
-      <div class="card">
-        <h3>Credit Risk Analysis using Machine Learning</h3>
-        <p>Built supervised ML pipeline in Python with scikit-learn, pandas, and Matplotlib. Achieved 85% accuracy and ROC-AUC 0.91.</p>
+      <div class="btn-group">
+        <a href="#projects" class="btn">See My Work</a>
+        <a href="/resume.pdf" class="btn" download>Download Resume</a>
+        <a href="#contact" class="btn">Contact Me</a>
       </div>
-
-      <div class="card">
-        <h3>Privacy-Preserving EHR Database</h3>
-        <p>Designed secure cloud-based EHR system handling 10k+ patient records, ensuring HIPAA compliance. Optimized UI usability, increasing satisfaction scores by 25%.</p>
+      <div class="social-icons">
+        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer">Twitter</a>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Certifications -->
-  <section class="certifications">
-    <div class="container">
-      <h2>Certifications</h2>
-      <ul>
-        <li>AWS Certified Developer — 05/2025</li>
-        <li>Databricks Generative AI — 07/2025</li>
-      </ul>
-    </div>
-  </section>
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-title">Project One</div>
+          <div class="project-desc">
+            A web application for managing tasks and deadlines efficiently.
+          </div>
+          <div class="project-tech">React, Node.js, MongoDB</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Project Two</div>
+          <div class="project-desc">
+            E-commerce platform with payment gateway integration.
+          </div>
+          <div class="project-tech">Vue.js, Firebase, Stripe API</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Project Three</div>
+          <div class="project-desc">
+            Mobile app for social networking and event planning.
+          </div>
+          <div class="project-tech">React Native, GraphQL, AWS</div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>📍 Washington DC</p>
-      <p>📧 <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
-      <p>📞 +1 (240)234-2963</p>
-      <p>🔗 <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
-    </div>
-  </section>
+    <section id="skills">
+      <h2>Skills & Tech Stack</h2>
+      <div class="skills-list">
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Express</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">GraphQL</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Docker</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Feel free to reach out via email or connect on LinkedIn!
+      </p>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-username</a></p>
+    </section>
+  </div>
 
   <footer>
-    <p>© 2025 Saidhu Hussen Basha Shaik</p>
+    &copy; 2025 Your Name. All rights reserved.
   </footer>
-
 </body>
 </html>
