@@ -3,72 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saidhu Shaik – Full-Stack Developer</title>
+    <title>Saidhu Hussen Basha Shaik – Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- HERO SECTION -->
     <div class="container">
         <div class="left-panel">
             <div class="stat"><span class="icon">⏱️</span><b>45% faster</b><br><span class="label">processes</span></div>
-            <div class="stat"><span class="icon">///</span><b>15+</b><br><span class="label">React</span></div>
-            <div class="stat"><span class="icon">🧩</span><b>React</b><br><span class="label">components</span></div>
+            <div class="stat"><span class="icon">///</span><b>15+</b><br><span class="label">React components</span></div>
             <div class="stat"><span class="icon">☁️</span><b>AWS</b><br><span class="label">Certified</span></div>
         </div>
         <div class="center-panel">
-            <h1>Saidhu Shaik</h1>
-            <h2>Full-Stack Developer</h2>
+            <h1>Saidhu Hussen Basha Shaik</h1>
+            <h2>Full-Stack Developer <span class="years">| 3+ Years Experience</span></h2>
+            <div class="contact-line">
+                Washington DC | +1 (240)234-2963
+            </div>
+            <div class="contact-line">
+                <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a> | 
+                <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">LinkedIn</a>
+            </div>
             <div class="buttons">
                 <button id="contactBtn">Contact Me</button>
                 <button id="projectsBtn">View Projects</button>
             </div>
         </div>
         <div class="right-panel">
+            <h3 class="stack-heading">Tech Stack</h3>
             <div class="stack">
-                <div><span class="stack-icon">⚛️</span> React</div>
-                <div><span class="stack-icon">🖥️</span> Node.js</div>
-                <div><span class="stack-icon">☁️</span> AWS</div>
-                <div><span class="stack-icon">💻</span> Javascript</div>
-                <div><span class="stack-icon">🌐</span> HTML5</div>
-                <div><span class="stack-icon">🎨</span> CSS3</div>
+                <div class="stack-item" id="react"><span class="stack-icon">⚛️</span> React</div>
+                <div class="stack-item" id="node"><span class="stack-icon">🖥️</span> Node.js</div>
+                <div class="stack-item" id="aws"><span class="stack-icon">☁️</span> AWS</div>
+                <div class="stack-item" id="js"><span class="stack-icon">💻</span> JavaScript</div>
+                <div class="stack-item" id="ts"><span class="stack-icon">⏩</span> TypeScript</div>
+                <div class="stack-item" id="py"><span class="stack-icon">🐍</span> Python</div>
+                <div class="stack-item" id="azure"><span class="stack-icon">🅰️</span> Azure</div>
+                <div class="stack-item" id="html"><span class="stack-icon">🌐</span> HTML5</div>
+                <div class="stack-item" id="css"><span class="stack-icon">🎨</span> CSS3</div>
+                <div class="stack-item" id="postgres"><span class="stack-icon">🗄️</span> PostgreSQL</div>
+                <div class="stack-item" id="sql"><span class="stack-icon">📊</span> SQL Server</div>
             </div>
         </div>
     </div>
 
-    <!-- Contact Modal -->
+    <!-- MODALS -->
     <div id="contactModal" class="modal">
         <div class="modal-content">
             <h3>Contact Me</h3>
             <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
+            <p>Phone: <a href="tel:+12402342963">+1 (240)234-2963</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">saidhu-shaik</a></p>
             <button onclick="closeModal('contactModal')">Close</button>
         </div>
     </div>
-
-    <!-- Projects Modal -->
     <div id="projectsModal" class="modal">
         <div class="modal-content">
-            <h3>Projects</h3>
+            <h3>Academic Projects</h3>
             <ul>
-                <li>Portfolio Website (this site)</li>
-                <li>Erie Insurance Platform Improvements</li>
-                <li>HashTek Healthcare Portal</li>
-                <li>Credit Risk ML Pipeline</li>
-                <li>EHR Secure Database Design</li>
+                <li>Credit Risk Analysis – ML, Python, ROC-AUC: 0.91</li>
+                <li>Privacy-Preserving EHR Database – Secure cloud, HIPAA, usability</li>
             </ul>
             <button onclick="closeModal('projectsModal')">Close</button>
         </div>
     </div>
 
+    <!-- SCROLL-REVEAL SECTIONS -->
+    <section class="about fade-in">
+        <h2>About Me</h2>
+        <p>
+            Software Developer with 3+ years of experience building and maintaining scalable full-stack applications and backend systems. Proficient in Python, C#, TypeScript, and JavaScript, with hands-on experience in RESTful APIs, cloud infrastructure (Azure, AWS), and Agile delivery. Recognized for writing clean, testable code, improving system performance, and driving automation.
+        </p>
+    </section>
+    <section class="skills fade-in">
+        <h2>Skills</h2>
+        <ul>
+            <li>Languages: Python, C#, JavaScript, TypeScript, Java, C</li>
+            <li>Frontend: React, AngularJS, HTML, CSS</li>
+            <li>Backend / Frameworks: NestJS, Node.js, ASP.NET MVC/Core</li>
+            <li>Databases: PostgreSQL, SQL Server, SSIS, ETL pipelines</li>
+            <li>Cloud & DevOps: Azure (Storage Queues, Azure DevOps), AWS (Certified Developer), Git, CI/CD</li>
+            <li>Practices/Tools: TDD, Unit Testing, Agile (Scrum/Kanban), GitHub, Bitbucket, JIRA</li>
+            <li>Other: REST APIs, Microservices (basic), Technical Documentation</li>
+        </ul>
+    </section>
+    <section class="experience fade-in">
+        <h2>Professional Experience</h2>
+        <div>
+            <h3>Erie Insurance, PA | Software Developer</h3>
+            <ul>
+                <li>Designed and implemented 15+ frontend components using React, TypeScript, and CSS, enhancing UI across 3 platforms.</li>
+                <li>Engineered backend API endpoints with NestJS and PostgreSQL, reducing form submission errors by 25%.</li>
+                <li>Optimized Azure Storage Queues, cutting processing time by 45%.</li>
+                <li>Resolved CI/CD issues in Azure DevOps, reducing failed deployments by 30%.</li>
+                <li>Conducted 40+ code reviews, lowering QA defects by 15%.</li>
+                <li>Authored 10+ pages of documentation for onboarding, deployment, configuration.</li>
+                <li>Built unit tests for critical modules, increasing test coverage from 60% to 85%.</li>
+                <li>Participated in Agile ceremonies (standups, sprint planning, retrospectives).</li>
+            </ul>
+        </div>
+        <div>
+            <h3>HashTek Solutions, India | Software Engineer</h3>
+            <ul>
+                <li>Developed 10+ web forms and modules with ASP.NET MVC and AngularJS for healthcare provider.</li>
+                <li>Integrated APIs and validated health data, reducing discrepancies by 35%.</li>
+                <li>Automated data loads with SSIS, reducing manual workload by 40+ hours/month.</li>
+                <li>Wrote 30+ stored procedures and scripts for reports and audits.</li>
+                <li>Resolved ~25 bugs during QA, accelerating delivery by 2 weeks.</li>
+                <li>Joined requirement-gathering, cross-functional meetings to ensure feature alignment.</li>
+                <li>Shadowed senior developers on releases, learned CI/CD and root cause analysis.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="education fade-in">
+        <h2>Education</h2>
+        <p>Master’s in Computer Science, Bay Atlantic University (2022–2023)</p>
+    </section>
+    <section class="projects fade-in">
+        <h2>Academic Projects</h2>
+        <h3>Credit Risk Analysis using Machine Learning | Bay Atlantic University</h3>
+        <ul>
+            <li>Built supervised learning pipeline in Python using pandas, scikit-learn, Matplotlib. Predicted credit default risk with 85% accuracy.</li>
+            <li>Trained models achieving ROC-AUC 0.91 and precision-recall 0.87.</li>
+            <li>Improved generalization by 12% through feature selection and class imbalance handling.</li>
+            <li>Delivered end-to-end pipeline processing 100k+ loan records, boosting risk prediction accuracy by 15%.</li>
+        </ul>
+        <h3>Privacy-Preserving EHR Database | Bay Atlantic University</h3>
+        <ul>
+            <li>Designed secure cloud-based EHR for 10k+ patient records, ensuring integrity and HIPAA compliance.</li>
+            <li>Integrated functional commitments for verifiable accuracy and regulatory adherence.</li>
+            <li>Optimized UI, raising user satisfaction by 25% in testing via usability/security balance.</li>
+        </ul>
+    </section>
+    <section class="certifications fade-in">
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Certified Developer – 05/2025</li>
+            <li>Databricks Generative AI – 07/2025</li>
+        </ul>
+    </section>
+
     <script>
+        // Highlight tech stack items on hover
+        document.querySelectorAll('.stack-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                item.classList.add('active');
+            });
+            item.addEventListener('mouseleave', function() {
+                item.classList.remove('active');
+            });
+        });
+
+        // Open/close modals
         document.getElementById('contactBtn').onclick = function() {
-            document.getElementById('contactModal').style.display = 'block';
+            document.getElementById('contactModal').style.display = 'flex';
         };
         document.getElementById('projectsBtn').onclick = function() {
-            document.getElementById('projectsModal').style.display = 'block';
+            document.getElementById('projectsModal').style.display = 'flex';
         };
         function closeModal(id) {
             document.getElementById(id).style.display = 'none';
         }
+
+        // Scroll animations
+        function revealOnScroll() {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < window.innerHeight - 80) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('DOMContentLoaded', revealOnScroll);
     </script>
 </body>
 </html>
