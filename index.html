@@ -17,16 +17,13 @@
         <div class="center-panel">
             <h1>Saidhu Hussen Basha Shaik</h1>
             <h2>Full-Stack Developer <span class="years">| 3+ Years Experience</span></h2>
-            <div class="contact-line">
-                Washington DC | +1 (240)234-2963
-            </div>
-            <div class="contact-line">
-                <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a> | 
-                <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">LinkedIn</a>
-            </div>
             <div class="buttons">
-                <button id="contactBtn">Contact Me</button>
-                <button id="projectsBtn">View Projects</button>
+                <button onclick="openModal('aboutModal')">About</button>
+                <button onclick="openModal('skillsModal')">Skills</button>
+                <button onclick="openModal('certModal')">Certification</button>
+                <button onclick="openModal('eduModal')">Education</button>
+                <button onclick="openModal('projectsModal')">Projects</button>
+                <button onclick="openModal('contactModal')">Contact</button>
             </div>
         </div>
         <div class="right-panel">
@@ -48,31 +45,75 @@
     </div>
 
     <!-- MODALS -->
-    <div id="contactModal" class="modal">
+    <div id="aboutModal" class="modal">
         <div class="modal-content">
-            <h3>Contact Me</h3>
-            <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
-            <p>Phone: <a href="tel:+12402342963">+1 (240)234-2963</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">saidhu-shaik</a></p>
-            <button onclick="closeModal('contactModal')">Close</button>
+            <h3>About Me</h3>
+            <p>Software Developer with 3+ years of experience building and maintaining scalable full-stack applications and backend systems. Proficient in Python, C#, TypeScript, and JavaScript with hands-on experience in RESTful APIs, cloud infrastructure (Azure, AWS), and Agile delivery.</p>
+            <p>Recognized for writing clean, testable code, improving system performance, and driving automation.</p>
+            <button onclick="closeModal('aboutModal')">Close</button>
+        </div>
+    </div>
+    <div id="skillsModal" class="modal">
+        <div class="modal-content">
+            <h3>Skills</h3>
+            <ul>
+                <li>Languages: Python, C#, JavaScript, TypeScript, Java, C</li>
+                <li>Frontend: React, AngularJS, HTML, CSS</li>
+                <li>Backend/Frameworks: NestJS, Node.js, ASP.NET MVC/Core</li>
+                <li>Databases: PostgreSQL, SQL Server, SSIS, ETL pipelines</li>
+                <li>Cloud & DevOps: Azure, AWS (Certified), Git, CI/CD</li>
+                <li>Practices: TDD, Unit Testing, Agile (Scrum/Kanban), GitHub, Bitbucket, JIRA</li>
+                <li>Other: REST APIs, Microservices (basic), Technical Documentation</li>
+            </ul>
+            <button onclick="closeModal('skillsModal')">Close</button>
+        </div>
+    </div>
+    <div id="certModal" class="modal">
+        <div class="modal-content">
+            <h3>Certifications</h3>
+            <ul>
+                <li>AWS Certified Developer – 05/2025</li>
+                <li>Databricks Generative AI – 07/2025</li>
+            </ul>
+            <button onclick="closeModal('certModal')">Close</button>
+        </div>
+    </div>
+    <div id="eduModal" class="modal">
+        <div class="modal-content">
+            <h3>Education</h3>
+            <p>Master’s in Computer Science<br>Bay Atlantic University, 2022–2023</p>
+            <button onclick="closeModal('eduModal')">Close</button>
         </div>
     </div>
     <div id="projectsModal" class="modal">
         <div class="modal-content">
             <h3>Academic Projects</h3>
             <ul>
-                <li>Credit Risk Analysis – ML, Python, ROC-AUC: 0.91</li>
-                <li>Privacy-Preserving EHR Database – Secure cloud, HIPAA, usability</li>
+                <li>Credit Risk Analysis using Machine Learning (ROC-AUC: 0.91)</li>
+                <li>Privacy-Preserving EHR Database (cloud, HIPAA, security)</li>
+            </ul>
+            <h3>Professional Experience</h3>
+            <ul>
+                <li>Erie Insurance – 15+ React components, 25% fewer errors, Azure optimization, CI/CD improvements, coverage +25%.</li>
+                <li>HashTek Solutions – ASP.NET/AngularJS, 10+ forms, QA, API/data automation, 40h/mo saved, cross-team delivery.</li>
             </ul>
             <button onclick="closeModal('projectsModal')">Close</button>
         </div>
     </div>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <h3>Contact Me</h3>
+            <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">saidhu-shaik</a></p>
+            <button onclick="closeModal('contactModal')">Close</button>
+        </div>
+    </div>
 
-    <!-- SCROLL-REVEAL SECTIONS -->
+    <!-- SCROLL-REVEAL SECTIONS (all info for scrolling also here) -->
     <section class="about fade-in">
         <h2>About Me</h2>
         <p>
-            Software Developer with 3+ years of experience building and maintaining scalable full-stack applications and backend systems. Proficient in Python, C#, TypeScript, and JavaScript, with hands-on experience in RESTful APIs, cloud infrastructure (Azure, AWS), and Agile delivery. Recognized for writing clean, testable code, improving system performance, and driving automation.
+            Software Developer with 3+ years building scalable full-stack applications. Strengths in Python, C#, TypeScript, JavaScript, RESTful APIs, cloud infrastructure (Azure, AWS), and Agile delivery. Clean code, performance optimization, and automation enthusiast.
         </p>
     </section>
     <section class="skills fade-in">
@@ -80,59 +121,10 @@
         <ul>
             <li>Languages: Python, C#, JavaScript, TypeScript, Java, C</li>
             <li>Frontend: React, AngularJS, HTML, CSS</li>
-            <li>Backend / Frameworks: NestJS, Node.js, ASP.NET MVC/Core</li>
+            <li>Backend: NestJS, Node.js, ASP.NET MVC/Core</li>
             <li>Databases: PostgreSQL, SQL Server, SSIS, ETL pipelines</li>
-            <li>Cloud & DevOps: Azure (Storage Queues, Azure DevOps), AWS (Certified Developer), Git, CI/CD</li>
-            <li>Practices/Tools: TDD, Unit Testing, Agile (Scrum/Kanban), GitHub, Bitbucket, JIRA</li>
-            <li>Other: REST APIs, Microservices (basic), Technical Documentation</li>
-        </ul>
-    </section>
-    <section class="experience fade-in">
-        <h2>Professional Experience</h2>
-        <div>
-            <h3>Erie Insurance, PA | Software Developer</h3>
-            <ul>
-                <li>Designed and implemented 15+ frontend components using React, TypeScript, and CSS, enhancing UI across 3 platforms.</li>
-                <li>Engineered backend API endpoints with NestJS and PostgreSQL, reducing form submission errors by 25%.</li>
-                <li>Optimized Azure Storage Queues, cutting processing time by 45%.</li>
-                <li>Resolved CI/CD issues in Azure DevOps, reducing failed deployments by 30%.</li>
-                <li>Conducted 40+ code reviews, lowering QA defects by 15%.</li>
-                <li>Authored 10+ pages of documentation for onboarding, deployment, configuration.</li>
-                <li>Built unit tests for critical modules, increasing test coverage from 60% to 85%.</li>
-                <li>Participated in Agile ceremonies (standups, sprint planning, retrospectives).</li>
-            </ul>
-        </div>
-        <div>
-            <h3>HashTek Solutions, India | Software Engineer</h3>
-            <ul>
-                <li>Developed 10+ web forms and modules with ASP.NET MVC and AngularJS for healthcare provider.</li>
-                <li>Integrated APIs and validated health data, reducing discrepancies by 35%.</li>
-                <li>Automated data loads with SSIS, reducing manual workload by 40+ hours/month.</li>
-                <li>Wrote 30+ stored procedures and scripts for reports and audits.</li>
-                <li>Resolved ~25 bugs during QA, accelerating delivery by 2 weeks.</li>
-                <li>Joined requirement-gathering, cross-functional meetings to ensure feature alignment.</li>
-                <li>Shadowed senior developers on releases, learned CI/CD and root cause analysis.</li>
-            </ul>
-        </div>
-    </section>
-    <section class="education fade-in">
-        <h2>Education</h2>
-        <p>Master’s in Computer Science, Bay Atlantic University (2022–2023)</p>
-    </section>
-    <section class="projects fade-in">
-        <h2>Academic Projects</h2>
-        <h3>Credit Risk Analysis using Machine Learning | Bay Atlantic University</h3>
-        <ul>
-            <li>Built supervised learning pipeline in Python using pandas, scikit-learn, Matplotlib. Predicted credit default risk with 85% accuracy.</li>
-            <li>Trained models achieving ROC-AUC 0.91 and precision-recall 0.87.</li>
-            <li>Improved generalization by 12% through feature selection and class imbalance handling.</li>
-            <li>Delivered end-to-end pipeline processing 100k+ loan records, boosting risk prediction accuracy by 15%.</li>
-        </ul>
-        <h3>Privacy-Preserving EHR Database | Bay Atlantic University</h3>
-        <ul>
-            <li>Designed secure cloud-based EHR for 10k+ patient records, ensuring integrity and HIPAA compliance.</li>
-            <li>Integrated functional commitments for verifiable accuracy and regulatory adherence.</li>
-            <li>Optimized UI, raising user satisfaction by 25% in testing via usability/security balance.</li>
+            <li>Cloud: Azure, AWS, DevOps, CI/CD</li>
+            <li>Practices: TDD, Unit Testing, Agile, GitHub/Bitbucket/JIRA</li>
         </ul>
     </section>
     <section class="certifications fade-in">
@@ -142,9 +134,36 @@
             <li>Databricks Generative AI – 07/2025</li>
         </ul>
     </section>
+    <section class="education fade-in">
+        <h2>Education</h2>
+        <p>Master’s in Computer Science, Bay Atlantic University (2022–2023)</p>
+    </section>
+    <section class="projects fade-in">
+        <h2>Academic Projects</h2>
+        <ul>
+            <li>Credit Risk Analysis using Machine Learning: Python/pandas/sklearn/Matplotlib, ROC-AUC 0.91, 15% accuracy boost.</li>
+            <li>Privacy-Preserving EHR Database: Secure, HIPAA-compliant, 10k+ patient records, UI/usability improvements.</li>
+        </ul>
+        <h2>Professional Experience</h2>
+        <strong>Erie Insurance (2023–2025):</strong>
+        <ul>
+            <li>15+ React components, 25% less errors, backend innovation, cutting Azure delays by 45%.</li>
+            <li>Increased test coverage from 60% to 85%.</li>
+        </ul>
+        <strong>HashTek Solutions (2022):</strong>
+        <ul>
+            <li>ASP.NET/AngularJS, 10+ forms, QA, 40+ hours/month automation, data pipelines, release cycles.</li>
+        </ul>
+    </section>
 
     <script>
-        // Highlight tech stack items on hover
+        function openModal(id) {
+            document.getElementById(id).style.display = 'flex';
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+        // Tech stack highlight
         document.querySelectorAll('.stack-item').forEach(item => {
             item.addEventListener('mouseenter', function() {
                 item.classList.add('active');
@@ -153,19 +172,7 @@
                 item.classList.remove('active');
             });
         });
-
-        // Open/close modals
-        document.getElementById('contactBtn').onclick = function() {
-            document.getElementById('contactModal').style.display = 'flex';
-        };
-        document.getElementById('projectsBtn').onclick = function() {
-            document.getElementById('projectsModal').style.display = 'flex';
-        };
-        function closeModal(id) {
-            document.getElementById(id).style.display = 'none';
-        }
-
-        // Scroll animations
+        // Scroll fade-in
         function revealOnScroll() {
             document.querySelectorAll('.fade-in').forEach(el => {
                 const top = el.getBoundingClientRect().top;
