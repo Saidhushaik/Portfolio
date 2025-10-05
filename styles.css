@@ -1,126 +1,149 @@
 body {
-    background: #111;
+    background: linear-gradient(135deg, #25206e 0%, #241757 100%);
     color: #fff;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
 }
 
-.hero {
-    min-height: 100vh;
+.container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.hero-content {
-    background: #171717;
-    padding: 3rem 2rem;
-    border-radius: 20px;
-    box-shadow: 0 6px 24px rgba(0,0,0,.44);
-    max-width: 450px;
-    margin: 2rem;
-    text-align: center;
+.left-panel, .center-panel, .right-panel {
+    padding: 2rem;
+    border-radius: 16px;
+    min-width: 230px;
 }
 
-.hero-name {
-    font-size: 2.4rem;
-    font-weight: 700;
-    letter-spacing: .5px;
-    margin-bottom: 0.6rem;
+.left-panel {
+    background: rgba(30,40,100,0.14);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.hero-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1.4rem;
-    color: #d6d5d8;
-}
-
-.years {
-    color: #9fd6ff;
-    font-size: 1rem;
-    margin-left: 0.3rem;
-    font-weight: 700;
-}
-
-.hero-achievements {
-    list-style: none;
-    margin: 0 0 2rem 0;
-    padding: 0;
+.stat {
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
     text-align: left;
 }
-
-.hero-achievements li {
-    margin-bottom: 0.8rem;
-    font-size: 1.08rem;
-    background: rgba(255,255,255,0.02);
-    padding: 0.6rem 0.8rem;
-    border-radius: 7px;
+.icon {
+    font-size: 1.6rem;
+    display: block;
+}
+.label {
+    color: #aaa;
+    font-size: 1rem;
 }
 
-.check {
-    margin-right: 8px;
-    color: #7bec89;
-    font-size: 1.15em;
+.center-panel {
+    background: rgba(50,60,110,0.16);
+    text-align: center;
+    margin: 0 2rem;
+}
+.center-panel h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 0.1em;
+    letter-spacing: -1px;
+}
+.center-panel h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #a1bfff;
+    margin-bottom: 2em;
 }
 
-.hero-stack {
-    margin: 1.7rem 0;
-}
-
-.stack-title {
-    font-weight: 700;
-    color: #9fd6ff;
-    font-size: 1.05rem;
-    margin-right: 5px;
-}
-.stack-item {
-    display: inline-block;
-    background: #24272b;
-    color: #d6d5d8;
-    font-size: 0.99rem;
-    margin: 0 4px 2px 0;
-    padding: 4px 10px;
-    border-radius: 5px;
-}
-
-.hero-actions {
-    margin-top: 2rem;
+.buttons {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
 }
-
-.btn-primary, .btn-secondary {
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: none;
-    border-radius: 7px;
-    padding: 0.7rem 1.5rem;
-    transition: .17s cubic-bezier(.17,.67,.83,.67) all;
-}
-
-.btn-primary {
-    background: #7bec89;
-    color: #111;
-    border: none;
-}
-
-.btn-primary:hover {
-    background: #58c66c;
+button {
+    background: #574ef2;
     color: #fff;
+    border: none;
+    font-size: 1.15rem;
+    padding: 0.8em 2em;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background .15s;
+}
+button:hover {
+    background: #3d3ac0;
 }
 
-.btn-secondary {
-    background: transparent;
-    color: #7bec89;
-    border: 2px solid #7bec89;
+.right-panel {
+    background: rgba(40,60,150,0.09);
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
 }
 
-.btn-secondary:hover {
-    background: #24272b;
-    color: #b5ffe5;
-    border-color: #58c66c;
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.stack-icon {
+    margin-right: 8px;
+    font-size: 1.25em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(28,19,54,0.62);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #191135;
+    color: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 14px;
+    max-width: 400px;
+    margin: 9rem auto;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(25,10,100,0.25);
+}
+.modal-content a {
+    color: #a1bfff;
+    text-decoration: underline;
+}
+.modal-content h3 {
+    margin-bottom: 1.1rem;
+}
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.modal-content li {
+    margin: 0.5rem 0;
+    font-size: 1.08rem;
+}
+.modal-content button {
+    margin-top: 1.2rem;
+    background: #574ef2;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    padding: 0.7em 1.2em;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.modal-content button:hover {
+    background: #3d3ac0;
 }

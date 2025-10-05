@@ -3,35 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saidhu Shaik - Portfolio</title>
+    <title>Saidhu Shaik – Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-name">Saidhu Shaik</h1>
-            <h2 class="hero-title">Full-Stack Developer <span class="years">| 3+ Years Experience</span></h2>
-            <ul class="hero-achievements">
-                <li><span class="check">✅</span> Reduced processing time by <b>45%</b> (Azure optimization)</li>
-                <li><span class="check">✅</span> Built <b>15+</b> responsive React components</li>
-                <li><span class="check">✅</span> Increased test coverage from <b>60%</b> to <b>85%</b></li>
-                <li><span class="check">✅</span> AWS Certified Developer with hands-on cloud experience</li>
-            </ul>
-            <div class="hero-stack">
-                <span class="stack-title">Tech Stack:</span>
-                <span class="stack-item">React</span>
-                <span class="stack-item">TypeScript</span>
-                <span class="stack-item">Node.js</span>
-                <span class="stack-item">Azure</span>
-                <span class="stack-item">AWS</span>
-                <span class="stack-item">PostgreSQL</span>
-            </div>
-            <div class="hero-actions">
-                <a href="mailto:hussenb.shaik@gmail.com" class="btn-primary">Contact Me</a>
-                <a href="https://linkedin.com/in/saidhu-shaik" class="btn-secondary" target="_blank">LinkedIn</a>
+    <div class="container">
+        <div class="left-panel">
+            <div class="stat"><span class="icon">⏱️</span><b>45% faster</b><br><span class="label">processes</span></div>
+            <div class="stat"><span class="icon">///</span><b>15+</b><br><span class="label">React</span></div>
+            <div class="stat"><span class="icon">🧩</span><b>React</b><br><span class="label">components</span></div>
+            <div class="stat"><span class="icon">☁️</span><b>AWS</b><br><span class="label">Certified</span></div>
+        </div>
+        <div class="center-panel">
+            <h1>Saidhu Shaik</h1>
+            <h2>Full-Stack Developer</h2>
+            <div class="buttons">
+                <button id="contactBtn">Contact Me</button>
+                <button id="projectsBtn">View Projects</button>
             </div>
         </div>
-    </section>
+        <div class="right-panel">
+            <div class="stack">
+                <div><span class="stack-icon">⚛️</span> React</div>
+                <div><span class="stack-icon">🖥️</span> Node.js</div>
+                <div><span class="stack-icon">☁️</span> AWS</div>
+                <div><span class="stack-icon">💻</span> Javascript</div>
+                <div><span class="stack-icon">🌐</span> HTML5</div>
+                <div><span class="stack-icon">🎨</span> CSS3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <h3>Contact Me</h3>
+            <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">saidhu-shaik</a></p>
+            <button onclick="closeModal('contactModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- Projects Modal -->
+    <div id="projectsModal" class="modal">
+        <div class="modal-content">
+            <h3>Projects</h3>
+            <ul>
+                <li>Portfolio Website (this site)</li>
+                <li>Erie Insurance Platform Improvements</li>
+                <li>HashTek Healthcare Portal</li>
+                <li>Credit Risk ML Pipeline</li>
+                <li>EHR Secure Database Design</li>
+            </ul>
+            <button onclick="closeModal('projectsModal')">Close</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactBtn').onclick = function() {
+            document.getElementById('contactModal').style.display = 'block';
+        };
+        document.getElementById('projectsBtn').onclick = function() {
+            document.getElementById('projectsModal').style.display = 'block';
+        };
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
 </body>
 </html>
