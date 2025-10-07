@@ -94,10 +94,8 @@ a {
 }
 
 a:hover {
-  color: #f59e0b;
+  color: #facc15;
 }
-
-/* Responsive */
 
 @media (max-width: 600px) {
   header h1 {
