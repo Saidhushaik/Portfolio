@@ -1,3 +1,10 @@
+// Initialize AOS animations
+AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: true,
+});
+
 // Smooth scroll for nav links
 document.querySelectorAll('nav a').forEach(anchor => {
   anchor.addEventListener('click', e => {
