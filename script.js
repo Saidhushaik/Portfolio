@@ -1,8 +1,11 @@
-// Example JS: Smooth scrolling for nav links
+// No extra JS needed for now because animations handled by AOS library
+// Smooth scrolling for navigation links (optional):
+
 document.querySelectorAll('nav a').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+  anchor.addEventListener('click', e => {
     e.preventDefault();
-    const section = document.querySelector(this.getAttribute('href'));
-    section.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 });
