@@ -1,22 +1,8 @@
-function revealOnScroll() {
-  const animatedItems = document.querySelectorAll('.animate');
-  let delay = 0;
-
-  animatedItems.forEach(item => {
-    const rect = item.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 60 && !item.classList.contains('visible')) {
-      setTimeout(() => {
-        item.classList.add('visible');
-      }, delay);
-      delay += 150;
-    }
+// Example JS: Smooth scrolling for nav links
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const section = document.querySelector(this.getAttribute('href'));
+    section.scrollIntoView({ behavior: 'smooth' });
   });
-}
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
-
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Thank you for your message!");
-  this.reset();
 });
