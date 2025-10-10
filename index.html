@@ -1,102 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Saidhu Shaik - Software Engineer Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- AOS Animation CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Saidhu Hussen Basha Shaik, Software Engineer">
+  <title>Saidhu Hussen Basha Shaik - Software Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
+  <header>
+    <div class="container">
+      <img class="profile-pic" src="path_to_profile_image.jpg" alt="Saidhu Shaik">
+      <div class="header-info">
+        <h1>Saidhu Hussen Basha Shaik</h1>
+        <p>Software Engineer | Full Stack Developer</p>
+        <a href="#contact" class="cta-btn">Contact Me</a>
+        <a href="assets/Basha_Resume.pdf" download class="cta-btn">Download Resume</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <img src="your-photo.jpg" alt="Saidhu Shaik Photo" class="profile-img" />
-            <h1 data-aos="fade-down">Saidhu Hussen Basha Shaik</h1>
-            <p data-aos="fade-down" data-aos-delay="100">Software Engineer | Full Stack Developer</p>
-            <nav data-aos="fade-up" data-aos-delay="200">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a Software Engineer with 3+ years of experience, specializing in full-stack web development. I’m passionate about creating efficient, scalable, and user-friendly applications. I’ve worked with a variety of tech stacks, and I enjoy tackling complex challenges that push my skills further.</p>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" data-aos="fade-up" data-aos-delay="300">
-        <h2>About Me</h2>
-        <p>I'm a software engineer passionate about developing innovative solutions. I enjoy building scalable, high-performance applications using modern frameworks and technologies.</p>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
+        <p>JavaScript (3 years)</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo">
+        <p>React (2 years)</p>
+      </div>
+      <!-- Add more skills -->
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" data-aos="fade-up" data-aos-delay="400">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>AWS</li>
-        </ul>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="path_to_image.jpg" alt="Project 1">
+      <div class="project-info">
+        <h3>Project Title</h3>
+        <p>Short description of the project.</p>
+        <p>Tech Stack: React, Node.js, MongoDB</p>
+        <a href="https://github.com/yourproject" target="_blank">View Project</a>
+      </div>
+    </div>
+    <!-- Add more projects -->
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" data-aos="fade-up" data-aos-delay="500">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
-            <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
-        </div>
-        <div class="project">
-            <h3>Full-Stack E-Commerce App</h3>
-            <p>A full-stack e-commerce application with user authentication and payment integration.</p>
-            <a href="https://github.com/yourusername/e-commerce" target="_blank">View Code</a>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
+    <p>GitHub: <a href="https://github.com/saidhu-shaik" target="_blank">github.com/saidhu-shaik</a></p>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience" data-aos="fade-up" data-aos-delay="600">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Software Developer - Erie Insurance</h3>
-            <p>September 2023 - Present</p>
-            <ul>
-                <li>Developed front-end components using React and TypeScript.</li>
-                <li>Created backend APIs with Node.js and MongoDB.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Software Engineer - HashTek Solutions</h3>
-            <p>July 2021 - August 2023</p>
-            <ul>
-                <li>Worked on full-stack projects using ASP.NET, React, and PostgreSQL.</li>
-                <li>Improved application performance by optimizing database queries.</li>
-            </ul>
-        </div>
-    </section>
+  <footer>
+    <p>&copy; 2025 Saidhu Hussen Basha Shaik</p>
+  </footer>
 
-    <!-- Contact Section -->
-    <section id="contact" data-aos="fade-up" data-aos-delay="700">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">linkedin.com/in/saidhu-shaik</a></p>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Saidhu Hussen Basha Shaik</p>
-    </footer>
-
-    <!-- AOS Animation Library JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
