@@ -1,140 +1,127 @@
 /* Basic Reset */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Global Styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background-color: #f8fafc;
-  color: #333;
-  line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
 header {
-  background-color: #0c4a6e;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+    background-color: #0c4a6e;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header .profile-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.8rem;
-  letter-spacing: 1px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 header p {
-  margin: 10px 0 20px;
-  font-weight: 400;
-  font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-nav {
-  margin-top: 20px;
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+header nav a:hover {
+    color: #facc15;
 }
 
-nav a:hover {
-  color: #facc15;
-}
-
-main {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-/* Section */
+/* Section Styles */
 section {
-  margin-bottom: 60px;
+    padding: 40px 0;
 }
 
 h2 {
-  font-size: 2.2rem;
-  color: #0c4a6e;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    font-size: 2rem;
+    color: #0c4a6e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0c4a6e;
+    padding-bottom: 10px;
 }
 
-/* Skills Grid */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 30px;
-  justify-items: center;
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.skill {
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.skills-list li {
+    font-size: 1.2rem;
 }
 
-.skill:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+/* Projects */
+.project {
+    margin-bottom: 20px;
 }
 
-.skill-logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  margin-bottom: 10px;
+.project a {
+    color: #0c4a6e;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.project-card {
-  display: flex;
-  margin-bottom: 20px;
-  background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+/* Experience */
+.job {
+    margin-bottom: 20px;
 }
 
-.project-card img {
-  width: 40%;
-  height: 100%;
-  object-fit: cover;
+.job h3 {
+    font-size: 1.5rem;
 }
 
-.project-info {
-  padding: 20px;
-  flex: 1;
+.job p {
+    font-weight: 600;
 }
 
-.project-info h3 {
-  margin-top: 0;
-  color: #0c4a6e;
+.job ul {
+    margin-top: 10px;
 }
 
-.project-info p {
-  color: #444;
-  margin-bottom: 10px;
-}
-
+/* Footer */
 footer {
-  background-color: #0c4a6e;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  margin-top: 40px;
+    background-color: #0c4a6e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav {
+        display: block;
+        margin-top: 20px;
+    }
+
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
