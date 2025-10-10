@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #f9fafb;
-  color: #1a202c;
+  background-color: #f8fafc;
+  color: #333;
   line-height: 1.6;
 }
 
@@ -17,19 +17,26 @@ header {
   background-color: #0c4a6e;
   color: white;
   text-align: center;
-  padding: 40px 20px 30px;
+  padding: 40px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 header h1 {
   margin: 0;
   font-size: 2.8rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 header p {
   margin: 10px 0 20px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2rem;
+}
+
+nav {
+  margin-top: 20px;
 }
 
 nav a {
@@ -46,110 +53,71 @@ nav a:hover {
 }
 
 main {
-  max-width: 960px;
-  margin: 40px auto 80px;
+  max-width: 1200px;
+  margin: 40px auto;
   padding: 0 20px;
 }
 
-h2 {
-  font-size: 2rem;
-  color: #0c4a6e;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #0c4a6e;
-  padding-bottom: 5px;
-}
-
+/* Section */
 section {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
-/* Skill Section */
+h2 {
+  font-size: 2.2rem;
+  color: #0c4a6e;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Skills Grid */
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 30px;
+  justify-items: center;
 }
 
 .skill {
-  width: 120px;
   background-color: white;
-  border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .skill-logo {
   width: 60px;
   height: 60px;
   object-fit: contain;
-  display: block;
-  margin: 0 auto 10px;
+  margin-bottom: 10px;
 }
 
-.skill p {
-  margin: 0;
-  font-weight: 600;
-  color: #334155;
-}
-
-/* Experience Section */
-article {
-  background-color: white;
-  padding: 20px 25px;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 25px;
-}
-
-article h3 {
-  margin-top: 0;
-  color: #0c4a6e;
-}
-
-article time {
-  font-size: 0.9rem;
-  color: #64748b;
-  display: block;
-  margin-bottom: 12px;
-}
-
-article ul {
-  padding-left: 20px;
-  margin: 0;
-}
-
-/* Project Section */
 .project-card {
   display: flex;
+  margin-bottom: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
   overflow: hidden;
-  flex-wrap: wrap;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-card img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+  width: 40%;
+  height: 100%;
   object-fit: cover;
-  border-right: 1px solid #e2e8f0;
 }
 
 .project-info {
   padding: 20px;
   flex: 1;
-  min-width: 280px;
 }
 
 .project-info h3 {
@@ -158,62 +126,15 @@ article ul {
 }
 
 .project-info p {
-  margin: 10px 0;
-  color: #475569;
+  color: #444;
+  margin-bottom: 10px;
 }
 
-/* Footer */
 footer {
   background-color: #0c4a6e;
   color: white;
   text-align: center;
-  padding: 20px 10px;
+  padding: 20px;
   font-size: 0.9rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-a {
-  color: #0c4a6e;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #facc15;
-  text-decoration: underline;
-}
-
-/* Resume Button */
-.resume-btn {
-  display: inline-block;
-  background-color: #facc15;
-  color: #0c4a6e;
-  padding: 10px 20px;
-  font-weight: 600;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.resume-btn:hover {
-  background-color: #e4a800;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .project-card {
-    flex-direction: column;
-  }
-
-  .project-card img {
-    border-right: none;
-    border-bottom: 1px solid #e2e8f0;
-    max-width: 100%;
-  }
-
-  .skills-grid {
-    justify-content: space-around;
-  }
+  margin-top: 40px;
 }

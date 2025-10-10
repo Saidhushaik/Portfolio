@@ -4,37 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saidhu Shaik - Software Engineer Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  
   <!-- AOS Animation CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <!-- FontAwesome for icons -->
   <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- Header Section -->
 <header>
-  <h1 data-aos="fade-down">Saidhu Hussen Basha Shaik</h1>
-  <p data-aos="fade-down" data-aos-delay="100">Software Developer | Full Stack Engineer</p>
-  <nav data-aos="fade-up" data-aos-delay="200">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container">
+    <h1 data-aos="fade-down">Saidhu Hussen Basha Shaik</h1>
+    <p data-aos="fade-down" data-aos-delay="100">Software Developer | Full Stack Engineer</p>
+    <nav data-aos="fade-up" data-aos-delay="200">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
+<!-- Main Content -->
 <main>
   <section id="about" data-aos="fade-up" data-aos-delay="300">
     <h2>About Me</h2>
-    <p>
-      Software Developer with 3+ years of experience building scalable full-stack applications and backend systems.
-      Proficient in Python, C#, TypeScript, and JavaScript with expertise in RESTful APIs and cloud infrastructure (Azure, AWS).
-    </p>
+    <p>Passionate software engineer with over 3 years of experience in building scalable, high-performance full-stack applications. Proficient in Python, JavaScript, TypeScript, and Cloud technologies. I believe in writing clean, maintainable code and am always eager to explore new challenges and technologies.</p>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills" data-aos="fade-up" data-aos-delay="400">
     <h2>Technical Skills</h2>
     <div class="skills-grid">
@@ -60,15 +66,16 @@
       </div>
       <div class="skill">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo" class="skill-logo">
-        <p>HTML</p>
+        <p>HTML5</p>
       </div>
     </div>
   </section>
 
+  <!-- Experience Section -->
   <section id="experience" data-aos="fade-up" data-aos-delay="500">
     <h2>Professional Experience</h2>
     <article>
-      <h3>Software Developer — Erie Insurance, PA</h3>
+      <h3>Software Developer — Erie Insurance</h3>
       <time>09/2023 – 02/2025</time>
       <ul>
         <li>Designed and implemented 15+ responsive frontend components using React and TypeScript.</li>
@@ -78,7 +85,7 @@
       </ul>
     </article>
     <article>
-      <h3>Software Engineer — HashTek Solutions, India</h3>
+      <h3>Software Engineer — HashTek Solutions</h3>
       <ul>
         <li>Developed 10+ web forms with ASP.NET MVC and AngularJS.</li>
         <li>Automated data loads reducing workload by 40+ hours/month.</li>
@@ -88,6 +95,7 @@
     </article>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" data-aos="fade-up" data-aos-delay="600">
     <h2>Projects</h2>
     <div class="project-card" data-aos="fade-up" data-aos-delay="650">
@@ -98,6 +106,7 @@
         <p><strong>Tech:</strong> Python, scikit-learn, pandas, Matplotlib</p>
       </div>
     </div>
+
     <div class="project-card" data-aos="fade-up" data-aos-delay="700">
       <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=EHR+Database" alt="EHR System Project">
       <div class="project-info">
@@ -106,6 +115,7 @@
         <p><strong>Tech:</strong> Cloud, Security, UI/UX Design</p>
       </div>
     </div>
+
     <div class="project-card" data-aos="fade-up" data-aos-delay="750">
       <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=Portfolio+Website" alt="Portfolio Website Project">
       <div class="project-info">
@@ -116,52 +126,24 @@
     </div>
   </section>
 
-  <section id="education" data-aos="fade-up" data-aos-delay="800">
-    <h2>Education</h2>
-    <p><strong>Master’s in Computer Science</strong> — Bay Atlantic University (2022-2023)</p>
-  </section>
-
-  <section id="certifications" data-aos="fade-up" data-aos-delay="900">
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Certified Developer – 05/2025</li>
-      <li>Databricks Generative AI – 07/2025</li>
-    </ul>
-  </section>
-
+  <!-- Contact Section -->
   <section id="contact" data-aos="fade-up" data-aos-delay="1000">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank" rel="noopener noreferrer">linkedin.com/in/saidhu-shaik</a></p>
-    <!-- Resume Button -->
     <a href="assets/Basha_Resume.pdf" download class="resume-btn">
       <i class="fas fa-download"></i> Download Résumé
     </a>
   </section>
 </main>
 
+<!-- Footer Section -->
 <footer data-aos="fade-up" data-aos-delay="1100">
   <p>&copy; 2025 Saidhu Hussen Basha Shaik</p>
 </footer>
 
+<!-- AOS Animation Library JS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true,
-  });
-
-  document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', e => {
-      e.preventDefault();
-      document.querySelector(anchor.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-</script>
-
 </body>
 </html>
