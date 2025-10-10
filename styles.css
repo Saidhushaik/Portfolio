@@ -184,6 +184,23 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  background-color: #facc15;
+  color: #0c4a6e;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #e4a800;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .project-card {
