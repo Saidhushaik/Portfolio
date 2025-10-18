@@ -1,15 +1,14 @@
+xml
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Saidhu Hussen Basha Shaik - Software Developer Portfolio</title>
+  <title>Saidhu Hussen Basha Shaik - Software Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
   <!-- AOS Animation CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <!-- FontAwesome for icons -->
-  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,170 +18,77 @@
     <h1 data-aos="fade-down">Saidhu Hussen Basha Shaik</h1>
     <p data-aos="fade-down" data-aos-delay="100">Software Developer | Full Stack Engineer</p>
     <nav data-aos="fade-up" data-aos-delay="200">
-      <!-- GitHub link now uses logo -->
+      <!-- GitHub link now uses a visible global logo -->
       <a href="https://github.com/Saidhushaik" target="_blank" aria-label="GitHub profile">
-        <i class="fab fa-github"></i>
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub logo" style="vertical-align: middle;">
       </a>
       <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">LinkedIn</a>
       <a href="mailto:hussenb.shaik@gmail.com">Email</a>
     </nav>
-    <!-- Add photo of yourself (replace src with your actual photo URL if available) -->
+    <!-- Profile photo (replace with your own URL!) -->
     <div style="margin-top:24px;">
-      <img src="https://placehold.co/140x140.png?text=Your+Photo" alt="Your Photo" style="border-radius:50%; width:140px; height:140px;">
+      <img src="https://placehold.co/140x140/png?text=Your+Photo" alt="Your Photo" style="border-radius:50%; width:140px; height:140px;">
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-
-    <!-- About Section -->
-    <section id="about" data-aos="fade-up" data-aos-delay="300">
-      <h2>About Me</h2>
-      <p>
-        Software Developer with 3+ years of experience in designing, developing, and maintaining web applications and backend services. Proficient in Python, C#, JavaScript, and TypeScript, with strong expertise in RESTful API development, cloud deployments (Azure & AWS), and Agile methodologies. I specialize in writing clean, efficient code and contributing to cross-functional teams to deliver high-quality software solutions.
-      </p>
-    </section>
-
-    <!-- Technical Skills Section -->
-    <section id="skills" data-aos="fade-up" data-aos-delay="400">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" class="skill-logo">
-          <p>Python</p>
-        </div>
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" class="skill-logo">
-          <p>JavaScript</p>
-        </div>
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript logo" class="skill-logo">
-          <p>TypeScript</p>
-        </div>
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo" class="skill-logo">
-          <p>React</p>
-        </div>
-        <div class="skill">
-          <!-- FIX AWs LOGO LINK: if this one broke, use alternative below -->
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS logo" class="skill-logo">
-          <p>AWS</p>
-        </div>
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo" class="skill-logo">
-          <p>Node.js</p>
-        </div>
+  <!-- Technical Skills Section -->
+  <section id="skills" data-aos="fade-up" data-aos-delay="400">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" class="skill-logo">
+        <p>Python</p>
       </div>
-    </section>
-
-    <!-- Professional Experience Section -->
-    <section id="experience" data-aos="fade-up" data-aos-delay="500">
-      <h2>Professional Experience</h2>
-
-      <article>
-        <h3>Software Developer — Erie Insurance, PA</h3>
-        <time>09/2023 – Present</time>
-        <ul>
-          <li>Revamped the user interface of insurance platforms using React, TypeScript, and HTML/CSS, driving a 25% increase in user satisfaction and adoption.</li>
-          <li>Architected backend services with NestJS and Node.js, building 20+ API endpoints to handle policy transactions, claims data, and billing processes.</li>
-          <li>Optimized claims processing workflows by integrating Azure Storage Queues, reducing processing time by 30%.</li>
-          <li>Led code reviews, improving code quality by reducing bugs by 15% and enhancing system stability.</li>
-          <li>Created and maintained technical documentation for internal systems, increasing onboarding efficiency by 40%.</li>
-          <li>Contributed to Agile ceremonies, including sprint planning, standups, and retrospectives, ensuring continuous improvement of platform features.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Software Engineer — HashTek Solutions, India</h3>
-        <time>06/2020 – 11/2021</time>
-        <ul>
-          <li>Designed user interfaces for a patient management system using ASP.NET MVC and AngularJS, reducing user errors by 15%.</li>
-          <li>Automated data imports with SSIS, cutting manual processing time by 40% and improving report generation speed by 30%.</li>
-          <li>Refined SQL queries and stored procedures, reducing processing time by 20% and improving audit traceability.</li>
-          <li>Collaborated with QA to resolve 10+ bugs across multiple environments, ensuring smoother deployments.</li>
-          <li>Contributed to documentation supporting regulatory compliance, ensuring 100% compliance during audits.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" data-aos="fade-up" data-aos-delay="600">
-      <h2>Projects</h2>
-
-      <div class="project-card">
-        <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=Credit+Risk+Analysis" alt="Credit Risk Analysis Project">
-        <div class="project-info">
-          <h3>
-            <a href="https://github.com/Saidhushaik/credit-risk-ml" target="_blank">Credit Risk Analysis using ML</a>
-          </h3>
-          <p>Built a Python pipeline predicting credit default risk with 85% accuracy using scikit-learn.</p>
-          <p><strong>Tech:</strong> Python, scikit-learn, pandas, Matplotlib</p>
-        </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" class="skill-logo">
+        <p>JavaScript</p>
       </div>
-
-      <div class="project-card">
-        <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=EHR+Database" alt="EHR System Project">
-        <div class="project-info">
-          <h3>
-            <a href="https://github.com/Saidhushaik/ehr-database" target="_blank">Privacy-Preserving EHR Database</a>
-          </h3>
-          <p>Designed a secure cloud-based EHR system handling 10k+ patient records with HIPAA compliance.</p>
-          <p><strong>Tech:</strong> Cloud, Security, UI/UX Design</p>
-        </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript logo" class="skill-logo">
+        <p>TypeScript</p>
       </div>
-
-      <div class="project-card">
-        <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=Portfolio+Website" alt="Portfolio Website Project">
-        <div class="project-info">
-          <h3>
-            <a href="https://saidhu-portfolio.vercel.app/" target="_blank">Portfolio Website</a>
-          </h3>
-          <p>
-            Developed this responsive portfolio site using HTML, CSS, and JavaScript with smooth scroll animations.
-            <br>
-            <a href="https://github.com/Saidhushaik/portfolio-site" target="_blank">
-              <i class="fab fa-github"></i> Code on GitHub
-            </a>
-          </p>
-          <p><strong>Tech:</strong> HTML, CSS, JS, AOS</p>
-        </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo" class="skill-logo">
+        <p>React</p>
       </div>
-    </section>
+      <div class="skill">
+        <!-- Guaranteed global AWS logo -->
+        <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS logo" class="skill-logo">
+        <p>AWS</p>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo" class="skill-logo">
+        <p>Node.js</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education" data-aos="fade-up" data-aos-delay="800">
-      <h2>Education</h2>
-      <p><strong>Master’s in Computer Science</strong> — Bay Atlantic University (2022-2023)</p>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" data-aos="fade-up" data-aos-delay="900">
-      <h2>Certifications</h2>
-      <ul>
-        <li>AWS Certified Developer – 05/2025</li>
-        <li>Databricks Generative AI – 07/2025</li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" data-aos="fade-up" data-aos-delay="1000">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank" rel="noopener noreferrer">linkedin.com/in/saidhu-shaik</a></p>
-      <a href="assets/Basha_Resume.pdf" download class="resume-btn">
-        <i class="fas fa-download"></i> Download Résumé
-      </a>
-    </section>
-
-  </main>
+  <!-- Projects Section (Example 1 project with clickable links and icons) -->
+  <section id="projects" data-aos="fade-up" data-aos-delay="600">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=Credit+Risk+Analysis" alt="Credit Risk Analysis Project">
+      <div class="project-info">
+        <h3>
+          <a href="https://github.com/Saidhushaik/credit-risk-ml" target="_blank">
+            Credit Risk Analysis using ML
+            <img src="https://img.icons8.com/ios-glyphs/20/000000/github.png" alt="GitHub logo" style="vertical-align: text-bottom;">
+          </a>
+        </h3>
+        <p>Built a Python pipeline predicting credit default risk with 85% accuracy using scikit-learn.</p>
+        <p><strong>Tech:</strong> Python, scikit-learn, pandas, Matplotlib</p>
+      </div>
+    </div>
+    <!-- Add more projects in similar format -->
+  </section>
 
   <!-- Footer -->
   <footer data-aos="fade-up" data-aos-delay="1100">
     <div class="footer-links">
       <a href="https://github.com/Saidhushaik" target="_blank" aria-label="GitHub profile" style="margin-right:12px;">
-        <i class="fab fa-github fa-lg"></i>
+        <img src="https://img.icons8.com/ios-glyphs/28/000000/github.png" alt="GitHub logo" style="vertical-align:middle;">
       </a>
-      <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a>
+      <a href="mailto:hussenb.shaik@gmail.com" style="vertical-align:middle;">hussenb.shaik@gmail.com</a>
     </div>
     <p>&copy; 2025 Hussen Basha Shaik</p>
   </footer>
@@ -193,5 +99,4 @@
     AOS.init();
   </script>
 </body>
-
 </html>
