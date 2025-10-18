@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Hussen Basha Shaik - Software Developer Portfolio</title>
+  <title> Saidhu Hussen Basha Shaik - Software Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
   <!-- AOS Animation CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
@@ -16,12 +16,20 @@
 
   <!-- Header -->
   <header>
-    <h1 data-aos="fade-down">Hussen Basha Shaik</h1>
+    <h1 data-aos="fade-down">Saidhu Hussen Basha Shaik</h1>
     <p data-aos="fade-down" data-aos-delay="100">Software Developer | Full Stack Engineer</p>
     <nav data-aos="fade-up" data-aos-delay="200">
-      <a href="https://github.com/Saidhushaik" target="_blank">GitHub</a>
+      <!-- GitHub link now uses logo -->
+      <a href="https://github.com/Saidhushaik" target="_blank" aria-label="GitHub profile">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/saidhu-shaik" target="_blank">LinkedIn</a>
       <a href="mailto:hussenb.shaik@gmail.com">Email</a>
     </nav>
+    <!-- Add photo of yourself (replace src with your actual photo URL if available) -->
+    <div style="margin-top:24px;">
+      <img src="https://placehold.co/140x140.png?text=Your+Photo" alt="Your Photo" style="border-radius:50%; width:140px; height:140px;">
+    </div>
   </header>
 
   <!-- Main Content -->
@@ -56,7 +64,8 @@
           <p>React</p>
         </div>
         <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg" alt="AWS logo" class="skill-logo">
+          <!-- FIX AWs LOGO LINK: if this one broke, use alternative below -->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS logo" class="skill-logo">
           <p>AWS</p>
         </div>
         <div class="skill">
@@ -103,7 +112,9 @@
       <div class="project-card">
         <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=Credit+Risk+Analysis" alt="Credit Risk Analysis Project">
         <div class="project-info">
-          <h3>Credit Risk Analysis using ML</h3>
+          <h3>
+            <a href="https://github.com/Saidhushaik/credit-risk-ml" target="_blank">Credit Risk Analysis using ML</a>
+          </h3>
           <p>Built a Python pipeline predicting credit default risk with 85% accuracy using scikit-learn.</p>
           <p><strong>Tech:</strong> Python, scikit-learn, pandas, Matplotlib</p>
         </div>
@@ -112,7 +123,9 @@
       <div class="project-card">
         <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=EHR+Database" alt="EHR System Project">
         <div class="project-info">
-          <h3>Privacy-Preserving EHR Database</h3>
+          <h3>
+            <a href="https://github.com/Saidhushaik/ehr-database" target="_blank">Privacy-Preserving EHR Database</a>
+          </h3>
           <p>Designed a secure cloud-based EHR system handling 10k+ patient records with HIPAA compliance.</p>
           <p><strong>Tech:</strong> Cloud, Security, UI/UX Design</p>
         </div>
@@ -121,8 +134,16 @@
       <div class="project-card">
         <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=Portfolio+Website" alt="Portfolio Website Project">
         <div class="project-info">
-          <h3>Portfolio Website</h3>
-          <p>Developed this responsive portfolio site using HTML, CSS, and JavaScript with smooth scroll animations.</p>
+          <h3>
+            <a href="https://saidhu-portfolio.vercel.app/" target="_blank">Portfolio Website</a>
+          </h3>
+          <p>
+            Developed this responsive portfolio site using HTML, CSS, and JavaScript with smooth scroll animations.
+            <br>
+            <a href="https://github.com/Saidhushaik/portfolio-site" target="_blank">
+              <i class="fab fa-github"></i> Code on GitHub
+            </a>
+          </p>
           <p><strong>Tech:</strong> HTML, CSS, JS, AOS</p>
         </div>
       </div>
@@ -147,6 +168,7 @@
     <section id="contact" data-aos="fade-up" data-aos-delay="1000">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/saidhu-shaik" target="_blank" rel="noopener noreferrer">linkedin.com/in/saidhu-shaik</a></p>
       <a href="assets/Basha_Resume.pdf" download class="resume-btn">
         <i class="fas fa-download"></i> Download Résumé
       </a>
@@ -156,6 +178,12 @@
 
   <!-- Footer -->
   <footer data-aos="fade-up" data-aos-delay="1100">
+    <div class="footer-links">
+      <a href="https://github.com/Saidhushaik" target="_blank" aria-label="GitHub profile" style="margin-right:12px;">
+        <i class="fab fa-github fa-lg"></i>
+      </a>
+      <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a>
+    </div>
     <p>&copy; 2025 Hussen Basha Shaik</p>
   </footer>
 
