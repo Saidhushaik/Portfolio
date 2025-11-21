@@ -169,25 +169,38 @@ article ul {
   margin-bottom: 120px;
 }
 
-/* Footer — Updated */
+/* Footer */
 footer {
-  background-color: white;
-  color: #0c4a6e;
+  background-color: #0C4A6E;   /* Your blue color */
+  color: white !important;
   text-align: center;
-  padding: 30px 10px;
-  border-top: 1px solid #e5e5e5;
-  margin-top: 60px;
+  padding: 40px 10px;
+  margin-top: 80px;
+  width: 100%;
+  border-top: none;
+}
+
+.footer-links {
+  margin-bottom: 12px;
 }
 
 .footer-links img {
   width: 28px;
   height: 28px;
-  margin: 0 6px;
+  margin: 0 10px;
+  filter: brightness(0) invert(1);   /* Make icons white */
 }
 
 footer p {
-  margin-top: 12px;
+  margin-top: 10px;
+  color: white !important;  /* Ensure text stays white */
   font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Extra spacing so footer isn’t stuck to contact section */
+#contact {
+  margin-bottom: 120px;
 }
 
 /* Links */
