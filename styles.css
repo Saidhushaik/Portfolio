@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
 header {
   background-color: #0c4a6e;
   color: white;
@@ -45,6 +46,7 @@ nav a:hover {
   color: #facc15;
 }
 
+/* Layout */
 main {
   max-width: 960px;
   margin: 40px auto 80px;
@@ -63,7 +65,7 @@ section {
   margin-bottom: 50px;
 }
 
-/* Skill Section */
+/* Skills */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -101,7 +103,7 @@ section {
   color: #334155;
 }
 
-/* Experience Section */
+/* Experience */
 article {
   background-color: white;
   padding: 20px 25px;
@@ -127,7 +129,7 @@ article ul {
   margin: 0;
 }
 
-/* Project Section */
+/* Projects */
 .project-card {
   display: flex;
   background-color: white;
@@ -162,18 +164,33 @@ article ul {
   color: #475569;
 }
 
-/* Footer */
-footer {
-  background-color: #0c4a6e;
-  color: white;
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 0.9rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+/* Contact section spacing fix */
+#contact {
+  margin-bottom: 120px;
 }
 
+/* Footer — Updated */
+footer {
+  background-color: white;
+  color: #0c4a6e;
+  text-align: center;
+  padding: 30px 10px;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 60px;
+}
+
+.footer-links img {
+  width: 28px;
+  height: 28px;
+  margin: 0 6px;
+}
+
+footer p {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* Links */
 a {
   color: #0c4a6e;
   text-decoration: none;
@@ -201,7 +218,7 @@ a:hover {
   background-color: #e4a800;
 }
 
-/* Responsive */
+/* Mobile */
 @media (max-width: 768px) {
   .project-card {
     flex-direction: column;
