@@ -1,223 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saidhu Hussen Basha Shaik - Software Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saidhu Hussen Basha Shaik – Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- AOS Animation CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <style>
-    .icon-logo {
-      width: 28px;
-      height: 28px;
-      object-fit: contain;
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 4px;
-    }
-    /* Project Card Fixes */
-    .project-card img[alt$="logo"], 
-    .project-card img[alt$="Website logo"], 
-    .project-card img[alt$="GitHub logo"] {
-      width: 20px !important;
-      height: 20px !important;
-      object-fit: contain;
-    }
-    .project-card img:not([alt$="logo"]):not([alt$="Website logo"]):not([alt$="GitHub logo"]) {
-      max-width: 200px !important;
-      max-height: 160px !important;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 10px;
-    }
-    .project-card {
-      display: flex;
-      align-items: flex-start;
-      gap: 24px;
-      flex-direction: row;
-      padding: 20px 10px;
-      box-sizing: border-box;
-      margin-bottom: 30px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      flex-wrap: wrap;
-    }
-    .project-info {
-      flex: 1;
-      min-width: 180px;
-    }
-    .project-info h3 {
-      font-size: 1.2rem !important;
-      margin: 0 0 8px 0;
-      color: #0c4a6e;
-    }
-    @media (max-width: 768px) {
-      .project-card { flex-direction: column; }
-      .project-card img:not([alt$="logo"]):not([alt$="Website logo"]):not([alt$="GitHub logo"]) { margin-bottom: 14px; }
-    }
-  </style>
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1 data-aos="fade-down">Saidhu Hussen Basha Shaik</h1>
-    <p data-aos="fade-down" data-aos-delay="100">Software Developer | Full Stack Engineer</p>
-    <nav data-aos="fade-up" data-aos-delay="200">
-      <a href="https://github.com/Saidhushaik" target="_blank" aria-label="GitHub profile">
-        <img src="https://img.icons8.com/ios-glyphs/28/000000/github.png" alt="GitHub logo" class="icon-logo">
-      </a>
-      <a href="https://linkedin.com/in/hussen-shaik62" target="_blank" aria-label="LinkedIn profile">
-        <img src="https://img.icons8.com/ios-filled/28/000000/linkedin.png" alt="LinkedIn logo" class="icon-logo">
-      </a>
-      <a href="mailto:hussenb.shaik@gmail.com" aria-label="Email">
-        <img src="https://img.icons8.com/ios-filled/28/000000/email.png" alt="Email logo" class="icon-logo">
-      </a>
-      <a href="https://saidhu-portfolio.vercel.app/" target="_blank" aria-label="Portfolio Website">
-        <img src="https://img.icons8.com/ios-filled/28/000000/internet--v2.png" alt="Website logo" class="icon-logo">
-      </a>
-    </nav>
-    <!-- Your actual photo from Google Drive -->
-  <!-- <div style="margin-top:24px;">
-  <iframe src="..." width="140" height="140" style="border-radius:50%"></iframe>
-</div> -->
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Saidhu Hussen Basha Shaik</h1>
+      <p>Software Developer | Full Stack Engineer</p>
+    </div>
 
+    <div class="hero-photo">
+      <img src="your-photo.png" alt="Profile Photo" />
+    </div>
   </header>
 
   <main>
-    <!-- About Section -->
-    <section id="about" data-aos="fade-up" data-aos-delay="300">
+
+    <!-- ABOUT -->
+    <section class="card">
       <h2>About Me</h2>
       <p>
-        Software Developer with 5 years of experience in designing, developing, and maintaining web applications and backend services. Proficient in Python, C#, JavaScript, and TypeScript, with strong expertise in RESTful API development, cloud deployments (Azure & AWS), and Agile methodologies. I specialize in writing clean, efficient code and contributing to cross-functional teams to deliver high-quality software solutions.
+        Software Developer with 5 years of experience in designing, developing, and maintaining web applications 
+        and backend services. Proficient in Python, C#, JavaScript, and TypeScript with strong expertise in 
+        RESTful API development, cloud deployments (Azure & AWS), and Agile methodologies. I focus on writing clean, 
+        efficient code and collaborating across teams to build scalable software solutions.
       </p>
     </section>
 
-    <!-- Technical Skills Section -->
-    <section id="skills" data-aos="fade-up" data-aos-delay="400">
+    <!-- TECH SKILLS -->
+    <section class="card">
       <h2>Technical Skills</h2>
       <div class="skills-grid">
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" class="skill-logo">
-          <p>Python</p>
-        </div>
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" class="skill-logo">
-          <p>JavaScript</p>
-        </div>
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript logo" class="skill-logo">
-          <p>TypeScript</p>
-        </div>
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo" class="skill-logo">
-          <p>React</p>
-        </div>
-        <div class="skill">
-          <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS logo" class="skill-logo">
-          <p>AWS</p>
-        </div>
-        <div class="skill">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo" class="skill-logo">
-          <p>Node.js</p>
-        </div>
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>React</span>
+        <span>AWS</span>
+        <span>Node.js</span>
       </div>
     </section>
 
-    <!-- Professional Experience Section -->
-    <section id="experience" data-aos="fade-up" data-aos-delay="500">
+    <!-- EXPERIENCE -->
+    <section class="card">
       <h2>Professional Experience</h2>
-      <article>
+
+      <div class="job">
         <h3>Software Developer — Erie Insurance, PA</h3>
-        <time>09/2022 – Present</time>
+        <p class="date">09/2022 – Present</p>
         <ul>
-          <li>Revamped the user interface of insurance platforms using React, TypeScript, and HTML/CSS, driving a 25% increase in user satisfaction and adoption.</li>
-          <li>Architected backend services with NestJS and Node.js, building 20+ API endpoints to handle policy transactions, claims data, and billing processes.</li>
-          <li>Optimized claims processing workflows by integrating Azure Storage Queues, reducing processing time by 30%.</li>
-          <li>Led code reviews, improving code quality by reducing bugs by 15% and enhancing system stability.</li>
-          <li>Created and maintained technical documentation for internal systems, increasing onboarding efficiency by 40%.</li>
-          <li>Contributed to Agile ceremonies, including sprint planning, standups, and retrospectives, ensuring continuous improvement of platform features.</li>
+          <li>Developed UI components with React & TypeScript improving user satisfaction by 25%.</li>
+          <li>Built over 20 REST APIs with Node.js/NestJS improving claims workflows.</li>
+          <li>Integrated Azure Storage Queues reducing processing time by 30%.</li>
         </ul>
-      </article>
-      <article>
+      </div>
+
+      <div class="job">
         <h3>Software Engineer — HashTek Solutions, India</h3>
-        <time>06/2020 – 11/2021</time>
+        <p class="date">06/2020 – 11/2021</p>
         <ul>
-          <li>Designed user interfaces for a patient management system using ASP.NET MVC and AngularJS, reducing user errors by 15%.</li>
-          <li>Automated data imports with SSIS, cutting manual processing time by 40% and improving report generation speed by 30%.</li>
-          <li>Refined SQL queries and stored procedures, reducing processing time by 20% and improving audit traceability.</li>
-          <li>Collaborated with QA to resolve 10+ bugs across multiple environments, ensuring smoother deployments.</li>
-          <li>Contributed to documentation supporting regulatory compliance, ensuring 100% compliance during audits.</li>
+          <li>Developed ASP.NET MVC UI for medical systems, reducing user errors by 15%.</li>
+          <li>Automated ETL processes using SSIS improving reporting speed by 30%.</li>
         </ul>
-      </article>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" data-aos="fade-up" data-aos-delay="600">
+    <!-- PROJECTS -->
+    <section class="card">
       <h2>Projects</h2>
-      
-      <div class="project-card">
-        <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=Credit+Risk+Analysis" alt="Credit Risk Analysis Project">
-        <div class="project-info">
-          <h3>
-            <a href="https://github.com/Saidhushaik/Academic-Project" target="_blank">
-              Credit Risk Analysis using ML
-              <img src="https://img.icons8.com/ios-glyphs/20/000000/github.png" alt="GitHub logo" class="icon-logo">
-            </a>
-          </h3>
-          <p>Built a Python pipeline predicting credit default risk with 85% accuracy using scikit-learn.</p>
-          <p><strong>Tech:</strong> Python, scikit-learn, pandas, Matplotlib</p>
-        </div>
+
+      <div class="project">
+        <h3>Credit Risk Analysis using ML</h3>
+        <p>Python pipeline predicting credit default risk with 85% accuracy.</p>
       </div>
 
-      <div class="project-card">
-        <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=EHR+Database" alt="EHR System Project">
-        <div class="project-info">
-          <h3>
-            <a href="https://github.com/Saidhushaik/ehr-database" target="_blank">
-              Privacy-Preserving EHR Database
-              <img src="https://img.icons8.com/ios-glyphs/20/000000/github.png" alt="GitHub logo" class="icon-logo">
-            </a>
-          </h3>
-          <p>Designed a secure cloud-based EHR system handling 10k+ patient records with HIPAA compliance.</p>
-          <p><strong>Tech:</strong> Cloud, Security, UI/UX Design</p>
-        </div>
+      <div class="project">
+        <h3>Privacy-Preserving EHR Database</h3>
+        <p>Secure cloud-based EHR system with HIPAA-compliant architecture.</p>
       </div>
 
-      <div class="project-card">
-        <img src="https://placehold.co/400x220/0c4a6e/ffffff?text=Portfolio+Website" alt="Portfolio Website Project">
-        <div class="project-info">
-          <h3>
-            <a href="https://saidhu-portfolio.vercel.app/" target="_blank">
-              Portfolio Website
-              <img src="https://img.icons8.com/ios-filled/20/000000/internet--v2.png" alt="Website logo" class="icon-logo">
-            </a>
-          </h3>
-          <p>
-            Developed this responsive portfolio site using HTML, CSS, and JavaScript with smooth scroll animations.<br>
-            <a href="https://github.com/Saidhushaik/portfolio-site" target="_blank">
-              <img src="https://img.icons8.com/ios-glyphs/20/000000/github.png" alt="GitHub logo" class="icon-logo"> Code on GitHub
-            </a>
-          </p>
-          <p><strong>Tech:</strong> HTML, CSS, JS, AOS</p>
-        </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Responsive portfolio developed using HTML, CSS, and JavaScript.</p>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" data-aos="fade-up" data-aos-delay="800">
+    <!-- EDUCATION -->
+    <section class="card">
       <h2>Education</h2>
-      <p><strong>Master’s in Computer Science</strong> — Bay Atlantic University (2022-2023)</p>
+      <p><strong>Master’s in Computer Science</strong> – Bay Atlantic University (2022–2023)</p>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" data-aos="fade-up" data-aos-delay="900">
+    <!-- CERTIFICATIONS -->
+    <section class="card">
       <h2>Certifications</h2>
       <ul>
         <li>AWS Certified Developer – 05/2025</li>
@@ -225,39 +106,28 @@
       </ul>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" data-aos="fade-up" data-aos-delay="1000">
+    <!-- CONTACT -->
+    <section class="card">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:hussenb.shaik@gmail.com">hussenb.shaik@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/hussen-shaik62" target="_blank" rel="noopener noreferrer">linkedin.com/in/hussen-shaik62</a></p>
-     <!-- <a href="https://drive.google.com/uc?export=download&id=15rp5miihic5UtMn-OkIotBxcc_dZbpkO" download class="resume-btn">
-        Download Résumé
-      </a> -->
+      <p>LinkedIn: <a href="https://linkedin.com/in/hussen-shaik62" target="_blank">linkedin.com/in/hussen-shaik62</a></p>
+
+      <div class="social-icons">
+        <a href="https://github.com/Saidhushaik" target="_blank">🐙</a>
+        <a href="https://linkedin.com/in/hussen-shaik62" target="_blank">🔗</a>
+        <a href="mailto:hussenb.shaik@gmail.com">@</a>
+        <a href="https://saidhu-portfolio.vercel.app/" target="_blank">🌐</a>
+      </div>
     </section>
+
   </main>
 
-<footer data-aos="fade-up">
-  <div class="footer-links">
-    <a href="https://github.com/Saidhushaik" target="_blank">
-      <img src="https://img.icons8.com/ios-glyphs/28/ffffff/github.png" class="icon-logo">
-    </a>
-    <a href="https://linkedin.com/in/hussen-shaik62" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/28/ffffff/linkedin.png" class="icon-logo">
-    </a>
-    <a href="mailto:hussenb.shaik@gmail.com">
-      <img src="https://img.icons8.com/ios-filled/28/ffffff/email.png" class="icon-logo">
-    </a>
-    <a href="https://saidhu-portfolio.vercel.app/" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/28/ffffff/internet--v2.png" class="icon-logo">
-    </a>
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Saidhu Hussen Basha Shaik</p>
+  </footer>
 
-  <p>&copy; 2025 Saidhu Hussen Basha Shaik</p>
-</footer>
-  <!-- AOS Animation Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script src="script.js"></script>
+
 </body>
 </html>
