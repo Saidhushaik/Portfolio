@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +6,6 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
   background-color: #f9fafb;
   color: #1a202c;
   line-height: 1.6;
@@ -18,32 +16,17 @@ header {
   background-color: #0c4a6e;
   color: white;
   text-align: center;
-  padding: 40px 20px 30px;
+  padding: 40px 20px;
 }
 
 header h1 {
-  margin: 0;
   font-size: 2.8rem;
-  letter-spacing: 1.5px;
 }
 
 header p {
-  margin: 10px 0 20px;
-  font-weight: 600;
+  margin-top: 10px;
   font-size: 1.2rem;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #facc15;
 }
 
 /* Layout */
@@ -53,67 +36,44 @@ main {
   padding: 0 20px;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
 h2 {
   font-size: 2rem;
   color: #0c4a6e;
-  margin-bottom: 15px;
   border-bottom: 2px solid #0c4a6e;
   padding-bottom: 5px;
-}
-
-section {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 /* Skills */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 20px;
   justify-content: center;
 }
 
 .skill {
-  width: 120px;
   background-color: white;
-  border: 1px solid #e2e8f0;
+  padding: 15px 20px;
   border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.skill:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.skill-logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-.skill p {
-  margin: 0;
   font-weight: 600;
-  color: #334155;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 /* Experience */
 article {
-  background-color: white;
-  padding: 20px 25px;
+  background: white;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   margin-bottom: 25px;
 }
 
 article h3 {
-  margin-top: 0;
   color: #0c4a6e;
 }
 
@@ -121,129 +81,22 @@ article time {
   font-size: 0.9rem;
   color: #64748b;
   display: block;
-  margin-bottom: 12px;
-}
-
-article ul {
-  padding-left: 20px;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 /* Projects */
 .project-card {
-  display: flex;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  overflow: hidden;
-  flex-wrap: wrap;
-}
-
-.project-card img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  object-fit: cover;
-  border-right: 1px solid #e2e8f0;
-}
-
-.project-info {
+  background: white;
   padding: 20px;
-  flex: 1;
-  min-width: 280px;
-}
-
-.project-info h3 {
-  margin-top: 0;
-  color: #0c4a6e;
-}
-
-.project-info p {
-  margin: 10px 0;
-  color: #475569;
-}
-
-/* Contact section spacing fix */
-#contact {
-  margin-bottom: 120px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
 }
 
 /* Footer */
 footer {
-  background-color: #0C4A6E;   /* Your blue color */
-  color: white !important;
+  background-color: #0c4a6e;
+  color: white;
   text-align: center;
-  padding: 40px 10px;
-  margin-top: 80px;
-  width: 100%;
-  border-top: none;
-}
-
-.footer-links {
-  margin-bottom: 12px;
-}
-
-.footer-links img {
-  width: 28px;
-  height: 28px;
-  margin: 0 10px;
-  filter: brightness(0) invert(1);   /* Make icons white */
-}
-
-footer p {
-  margin-top: 10px;
-  color: white !important;  /* Ensure text stays white */
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-/* Extra spacing so footer isn’t stuck to contact section */
-#contact {
-  margin-bottom: 120px;
-}
-
-/* Links */
-a {
-  color: #0c4a6e;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #facc15;
-  text-decoration: underline;
-}
-
-/* Resume Button */
-.resume-btn {
-  display: inline-block;
-  background-color: #facc15;
-  color: #0c4a6e;
-  padding: 10px 20px;
-  font-weight: 600;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.resume-btn:hover {
-  background-color: #e4a800;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .project-card {
-    flex-direction: column;
-  }
-
-  .project-card img {
-    border-right: none;
-    border-bottom: 1px solid #e2e8f0;
-    max-width: 100%;
-  }
-
-  .skills-grid {
-    justify-content: space-around;
-  }
+  padding: 30px;
 }
