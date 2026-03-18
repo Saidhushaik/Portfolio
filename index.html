@@ -4,122 +4,308 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saidhu Hussen Basha Shaik - Data Engineer Portfolio</title>
-
   <link rel="stylesheet" href="styles.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
 
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <span class="nav-logo">Saidhu Shaik</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#stack">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
 <header>
-  <h1 data-aos="fade-down">Saidhu Hussen Basha Shaik</h1>
-  <p data-aos="fade-down" data-aos-delay="100">
-    Data Engineer | Big Data • Cloud • Analytics
-  </p>
+  <div class="hero-content">
+    <p class="hero-tag" data-aos="fade-down">👋 Welcome to my portfolio</p>
+    <h1 data-aos="fade-down" data-aos-delay="100">Saidhu Hussen Basha Shaik</h1>
+    <p class="hero-sub" data-aos="fade-down" data-aos-delay="200">
+      Senior Data Engineer &nbsp;|&nbsp; Big Data &nbsp;•&nbsp; Cloud &nbsp;•&nbsp; Analytics
+    </p>
+    <div class="hero-badges" data-aos="fade-up" data-aos-delay="300">
+      <span class="badge">AWS</span>
+      <span class="badge">Apache Spark</span>
+      <span class="badge">Kafka</span>
+      <span class="badge">Airflow</span>
+      <span class="badge">Redshift</span>
+      <span class="badge">Snowflake</span>
+    </div>
+    <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+      <a href="#contact" class="btn-primary">Get In Touch</a>
+      <a href="resume.pdf" class="btn-outline" target="_blank">Download Resume</a>
+    </div>
+  </div>
 </header>
 
 <main>
 
+<!-- ── ABOUT ── -->
 <section id="about" data-aos="fade-up">
   <h2>About Me</h2>
   <p>
-    Data Engineer with 5 years of hands-on experience designing and operating large-scale batch and streaming data pipelines across AWS and Azure environments. Strong expertise in Spark, Kafka, SQL, and Airflow, with a proven ability to improve data quality, performance, and pipeline reliability. Experienced in building production-grade data platforms that support analytics and business decision-making.
+    Data Engineer with <strong>5+ years of experience</strong> designing and operating large-scale data platforms and ETL pipelines across AWS and Hadoop ecosystems. Specialized in building batch and streaming pipelines using <strong>Spark, Kafka, and Airflow</strong> that process 5TB+ of data daily, supporting enterprise analytics and data warehousing solutions. Strong expertise in SQL optimization, data modeling, and cloud infrastructure, with a track record of improving pipeline reliability, reducing costs, and accelerating analytics performance at scale.
   </p>
+  <div class="about-stats">
+    <div class="stat-card">
+      <span class="stat-num">5+</span>
+      <span class="stat-label">Years Experience</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">5TB+</span>
+      <span class="stat-label">Daily Data Processed</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">40%</span>
+      <span class="stat-label">Data Consistency Improvement</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">60%</span>
+      <span class="stat-label">Faster Failure Detection</span>
+    </div>
+  </div>
 </section>
 
-<section id="expertise" data-aos="fade-up">
-  <h2>Core Expertise</h2>
-  <ul class="expertise-list">
-    <li>Large-scale batch & streaming data pipelines (Spark, Kafka)</li>
-    <li>ETL / ELT pipelines on AWS & Azure</li>
-    <li>Data warehousing & dimensional modeling</li>
-    <li>Workflow orchestration & monitoring (Airflow, ADF)</li>
-    <li>Cost optimization, automation & CI/CD</li>
-  </ul>
-</section>
-
+<!-- ── TECH STACK ── -->
 <section id="stack" data-aos="fade-up">
-  <h2>Tech Stack</h2>
-  <p><strong>Big Data:</strong> Spark, Kafka, Hive</p>
-  <p><strong>Cloud:</strong> AWS (S3, EMR, Redshift), Azure (ADF, Synapse)</p>
-  <p><strong>Orchestration:</strong> Airflow, Oozie</p>
-  <p><strong>Data Stores:</strong> Snowflake, Redshift, SQL Server</p>
-  <p><strong>DevOps & Monitoring:</strong> Terraform, Jenkins, Git, Prometheus, Grafana</p>
+  <h2>Skills & Tech Stack</h2>
+  <div class="stack-grid">
+
+    <div class="stack-card">
+      <h4>🔥 Big Data</h4>
+      <div class="tags">
+        <span>Apache Spark</span><span>Kafka</span><span>Hadoop</span>
+        <span>Hive</span><span>Pig</span><span>Sqoop</span>
+        <span>HBase</span><span>Flume</span>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <h4>☁️ Cloud – AWS</h4>
+      <div class="tags">
+        <span>S3</span><span>EMR</span><span>EC2</span>
+        <span>Lambda</span><span>Redshift</span><span>SNS</span><span>IAM</span>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <h4>☁️ Cloud – Azure</h4>
+      <div class="tags">
+        <span>Data Factory</span><span>Data Lake</span>
+        <span>Blob Storage</span><span>Synapse Analytics</span>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <h4>⚙️ Orchestration</h4>
+      <div class="tags">
+        <span>Apache Airflow</span><span>Oozie</span>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <h4>🗄️ Databases & Warehousing</h4>
+      <div class="tags">
+        <span>Snowflake</span><span>Redshift</span><span>Oracle</span>
+        <span>SQL Server</span><span>Teradata</span><span>Vertica</span>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <h4>💻 Programming</h4>
+      <div class="tags">
+        <span>Python</span><span>Scala</span><span>Java</span>
+        <span>SQL</span><span>Shell Scripting</span><span>PL/SQL</span>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <h4>🏗️ Architecture</h4>
+      <div class="tags">
+        <span>Data Lake</span><span>ETL Pipelines</span>
+        <span>Dimensional Modeling</span><span>Star Schema</span><span>Snowflake Schema</span>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <h4>🔧 DevOps & Monitoring</h4>
+      <div class="tags">
+        <span>Terraform</span><span>Jenkins</span><span>Git</span>
+        <span>Maven</span><span>Prometheus</span><span>Grafana</span>
+        <span>Splunk</span><span>New Relic</span>
+      </div>
+    </div>
+
+    <div class="stack-card">
+      <h4>📊 BI & Reporting</h4>
+      <div class="tags">
+        <span>Tableau</span><span>Power BI</span><span>SSRS</span>
+      </div>
+    </div>
+
+  </div>
 </section>
 
+<!-- ── EXPERIENCE ── -->
 <section id="experience" data-aos="fade-up">
   <h2>Professional Experience</h2>
 
   <article>
-    <h3>Data Engineer — GEICO, MD</h3>
-    <time>06/2023 – Present</time>
+    <div class="job-header">
+      <div>
+        <h3>Data Engineer</h3>
+        <p class="company">GEICO &nbsp;•&nbsp; Rockville, MD</p>
+      </div>
+      <time>Jun 2023 – Present</time>
+    </div>
     <ul>
-      <li>Built Spark pipelines processing 5TB+ daily insurance data, improving data consistency by 40%.</li>
-      <li>Designed Spark-based ETL/ELT pipelines on AWS EMR supporting analytics and reporting.</li>
-      <li>Implemented Kafka streaming ingestion across 10+ domains with sub-5 second latency.</li>
-      <li>Automated Airflow DAGs with SNS alerts, reducing incident recovery time by 60%.</li>
-      <li>Optimized S3 lifecycle policies using Terraform, reducing cloud storage costs by 20%.</li>
+      <li>Engineered high-throughput Spark pipelines on AWS EMR processing <strong>5TB+ insurance datasets daily</strong>, improving data consistency by 40% and reducing processing failures by 30%.</li>
+      <li>Architected a scalable cloud data warehouse using <strong>AWS Redshift</strong> integrated with S3-based data lake, accelerating analytics query performance by 35%.</li>
+      <li>Automated enterprise ETL orchestration using <strong>Apache Airflow DAGs</strong>, improving pipeline reliability and reducing operational failures by 25%.</li>
+      <li>Established dimensional data models and star schemas supporting enterprise reporting and advanced analytics workloads.</li>
+      <li>Streamlined pipeline monitoring through Airflow integrated with <strong>AWS SNS alerts</strong>, reducing failure detection time by 60%.</li>
+      <li>Provisioned automated EMR job workflows using Python services, lowering operational overhead by 30%.</li>
+      <li>Optimized S3 lifecycle policies using <strong>Terraform</strong>, reducing cloud storage costs by 20%.</li>
+      <li>Implemented CI/CD pipelines using <strong>Jenkins and AWS CodeBuild</strong>, doubling deployment speed and reducing release errors by 25%.</li>
     </ul>
   </article>
 
   <article>
-    <h3>Big Data Analyst — HashTek Solutions, India</h3>
-    <time>08/2020 – 11/2021</time>
+    <div class="job-header">
+      <div>
+        <h3>Data Analyst / Big Data Analyst</h3>
+        <p class="company">HashTek Solutions &nbsp;•&nbsp; Bangalore, India</p>
+      </div>
+      <time>Aug 2020 – Nov 2021</time>
+    </div>
     <ul>
-      <li>Built Spark SQL and Spark Streaming pipelines processing over 1M events per second.</li>
-      <li>Modernized MapReduce workflows into Spark pipelines, improving execution efficiency by 40%.</li>
-      <li>Designed Hive schemas for regulated datasets ensuring GDPR compliance.</li>
-      <li>Managed 60+ Oozie workflows, improving SLA adherence by 30%.</li>
+      <li>Constructed <strong>Spark SQL modules</strong> for the PSTL big data framework, increasing cluster-scale data processing throughput by 30%.</li>
+      <li>Modernized legacy MapReduce workloads by migrating to Apache Spark pipelines, improving compute performance by 40%.</li>
+      <li>Structured <strong>Hive warehouse schemas</strong> and curated 50+ analytical datasets, enabling scalable enterprise reporting.</li>
+      <li>Coordinated <strong>60+ Oozie workflows</strong> for ETL orchestration, improving SLA adherence and reducing delayed executions by 30%.</li>
+      <li>Introduced cluster monitoring using <strong>Prometheus and Grafana</strong>, reducing infrastructure downtime by 15%.</li>
+      <li>Refactored Vertica schemas and optimized JDBC configurations, reducing complex query execution time by 35%.</li>
+      <li>Strengthened Hadoop security using <strong>Kerberos authentication</strong> and Zookeeper coordination across development environments.</li>
+      <li>Executed large-scale data migrations between cloud storage and Hive, maintaining <strong>zero data loss</strong> across multi-node datasets.</li>
     </ul>
   </article>
 </section>
 
+<!-- ── PROJECTS ── -->
 <section id="projects" data-aos="fade-up">
   <h2>Projects</h2>
+  <div class="projects-grid">
 
-  <article>
-    <h3>Credit Risk Analysis (ML)</h3>
-    <p>
-      Built a machine learning pipeline to predict credit default risk using historical financial data, achieving 85% model accuracy.
-    </p>
-    <p><strong>Tech:</strong> Python, pandas, scikit-learn, SQL</p>
-  </article>
+    <div class="project-card">
+      <div class="project-icon">⚡</div>
+      <h3>Real-Time Insurance Data Pipeline</h3>
+      <p>Built an end-to-end streaming pipeline ingesting Kafka events across 10+ insurance domains, achieving sub-5 second latency. Deployed on AWS EMR with Airflow orchestration and SNS-based alerting.</p>
+      <div class="tags">
+        <span>Apache Kafka</span><span>Spark Streaming</span><span>AWS EMR</span><span>Airflow</span><span>SNS</span>
+      </div>
+    </div>
 
-  <article>
-    <h3>Healthcare Data Platform</h3>
-    <p>
-      Designed a secure cloud-based healthcare data platform supporting analytics-ready datasets and data governance for 10k+ records.
-    </p>
-    <p><strong>Tech:</strong> Cloud Storage, Data Modeling, Security</p>
-  </article>
+    <div class="project-card">
+      <div class="project-icon">🏗️</div>
+      <h3>Cloud Data Warehouse on AWS Redshift</h3>
+      <p>Architected a scalable Redshift-based data warehouse integrated with an S3 data lake. Designed star schema dimensional models to accelerate analytics query performance by 35% for enterprise reporting.</p>
+      <div class="tags">
+        <span>AWS Redshift</span><span>S3</span><span>Star Schema</span><span>SQL</span><span>Terraform</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-icon">🔄</div>
+      <h3>Hadoop to Spark Migration</h3>
+      <p>Led migration of 60+ legacy MapReduce and Oozie workflows to Apache Spark and Airflow pipelines. Improved compute performance by 40% while reducing cluster resource usage and operational overhead.</p>
+      <div class="tags">
+        <span>Apache Spark</span><span>Hadoop</span><span>Hive</span><span>Oozie</span><span>Python</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-icon">📊</div>
+      <h3>Enterprise ETL Monitoring Platform</h3>
+      <p>Built a centralized pipeline monitoring system using Prometheus and Grafana dashboards with automated alerting, reducing infrastructure downtime by 15% and improving SLA adherence across data teams.</p>
+      <div class="tags">
+        <span>Prometheus</span><span>Grafana</span><span>Airflow</span><span>AWS SNS</span>
+      </div>
+    </div>
+
+  </div>
 </section>
 
+<!-- ── EDUCATION ── -->
 <section id="education" data-aos="fade-up">
   <h2>Education</h2>
-  <p><strong>Master’s in Big Data Analytics</strong> — Bay Atlantic University (2022–2023)</p>
+  <article class="edu-card">
+    <div class="edu-icon">🎓</div>
+    <div>
+      <h3>Master's in Big Data Analytics</h3>
+      <p class="company">Bay Atlantic University &nbsp;•&nbsp; Washington, DC</p>
+      <time>2022 – 2023</time>
+    </div>
+  </article>
 </section>
 
+<!-- ── CERTIFICATIONS ── -->
 <section id="certifications" data-aos="fade-up">
   <h2>Certifications</h2>
-  <ul>
-    <li>AWS Certified Developer – 05/2025</li>
-    <li>Databricks Data Engineer – 05/2025</li>
-    <li>Cisco Analytics Engineer – 12/2025</li>
-  </ul>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <span class="cert-icon">🏅</span>
+      <div>
+        <p class="cert-name">AWS Certified Developer</p>
+        <p class="cert-date">May 2025</p>
+      </div>
+    </div>
+    <div class="cert-card">
+      <span class="cert-icon">🏅</span>
+      <div>
+        <p class="cert-name">Databricks Data Engineer</p>
+        <p class="cert-date">May 2025</p>
+      </div>
+    </div>
+    <div class="cert-card">
+      <span class="cert-icon">🏅</span>
+      <div>
+        <p class="cert-name">Cisco Analytics Engineer</p>
+        <p class="cert-date">Dec 2025</p>
+      </div>
+    </div>
+    <div class="cert-card">
+      <span class="cert-icon">🏅</span>
+      <div>
+        <p class="cert-name">Snowflake Data Engineering Professional</p>
+        <p class="cert-date">Mar 2026</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- ── CONTACT ── -->
 <section id="contact" data-aos="fade-up">
   <h2>Contact</h2>
+  <p class="contact-intro">Open to <strong>Senior Data Engineer</strong> and <strong>Big Data</strong> opportunities. Let's connect!</p>
 
   <div class="contact-grid">
-    <a href="mailto:hussenb.shaik@gmail.com" class="contact-card">
+    <a href="mailto:saidhuhb.shaik@gmail.com" class="contact-card">
       <span class="contact-icon">📧</span>
       <div>
         <p class="contact-title">Email</p>
         <p class="contact-text">saidhuhb.shaik@gmail.com</p>
       </div>
     </a>
-
     <a href="https://linkedin.com/in/hussen-shaik62" target="_blank" class="contact-card">
       <span class="contact-icon">💼</span>
       <div>
@@ -127,7 +313,6 @@
         <p class="contact-text">linkedin.com/in/hussen-shaik62</p>
       </div>
     </a>
-
     <a href="https://github.com/Saidhushaik" target="_blank" class="contact-card">
       <span class="contact-icon">🐙</span>
       <div>
@@ -137,21 +322,34 @@
     </a>
   </div>
 
-  <a href="resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
-
-  <p class="cta-text">
-    Open to Senior Data Engineer & Big Data opportunities.
-  </p>
+  <a href="resume.pdf" class="resume-btn" target="_blank">📄 Download Resume</a>
 </section>
 
 </main>
 
 <footer>
-  <p>&copy; 2025 Saidhu Hussen Basha Shaik</p>
+  <p>© 2025 Saidhu Hussen Basha Shaik &nbsp;|&nbsp; Built with passion for Data Engineering</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init();</script>
+<script>
+  AOS.init({ duration: 700, once: true });
+
+  // Sticky nav highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 80) current = s.getAttribute('id');
+    });
+    navLinks.forEach(a => {
+      a.classList.remove('active');
+      if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+    });
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+  });
+</script>
 
 </body>
 </html>
